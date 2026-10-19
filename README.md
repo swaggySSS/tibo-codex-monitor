@@ -52,7 +52,7 @@ GitHub Actions 每 15 分钟检查第三方公开数据源，用 push+ 发到你
 │   └── test_monitor.py
 └── .github/
     └── workflows/
-        └── monitor.yml          # 只有放在这个路径，GitHub 才会定时执行
+        └── codex-monitor.yml    # 只有放在这个路径，GitHub 才会定时执行
 ```
 
 ### 网页上传时看不到 `.github` 文件夹怎么办
@@ -62,10 +62,10 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 1. 先上传可见文件以及 `tests` 文件夹，提交。
 2. 打开本项目可见的 `workflow.yml` 文件，复制全部内容。
 3. 回到仓库，选择 **Add file → Create new file**。
-4. 文件名输入 **`.github/workflows/monitor.yml`**。
+4. 文件名输入 **`.github/workflows/codex-monitor.yml`**。
 5. 粘贴刚才复制的内容，选择 **Commit changes**，提交到默认分支。
 
-仓库根目录的 `workflow.yml` 只是备份，不会自己运行。如果 `.github/workflows/monitor.yml` 已经上传，不用再创建一次。日后改执行时间时修改 `.github/workflows/monitor.yml` 即可。
+仓库根目录的 `workflow.yml` 只是备份，不会自己运行。如果 `.github/workflows/codex-monitor.yml` 已经上传，不用再创建一次。日后改执行时间时修改 `.github/workflows/codex-monitor.yml` 即可。
 
 ## 第 4 步：把 Token 放入 GitHub Secrets
 
@@ -82,7 +82,7 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 
 1. 打开仓库顶部 **Actions**。
 2. 如果出现启用工作流的提示，选择允许启用。
-3. 左侧选择 **Tibo Codex Monitor**。
+3. 左侧选择 **Tibo Codex Auto Monitor**。
 4. 点击右侧 **Run workflow**，Branch 选默认分支 `main`。
 5. mode 选 **`test`**，点击绿色 **Run workflow**。
 6. 打开新出现的运行记录，等待完成，然后检查手机微信。
@@ -97,7 +97,7 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 2. 运行成功后打开 **Summary**，应看到“已建立初始基线”。
 3. 仓库会自动出现 `monitor-state` 分支，其中的 `state/monitor.json` 保存去重、上下文和待重试记录。
 4. 保持默认分支仍是 `main`。**不要把 `monitor-state` 设置成默认分支，也不要删除其状态文件。**
-5. 等待后续的自动运行。默认计划是北京时间每小时第 **2、17、32、47 分钟**，计划间隔 15 分钟；上游同步和 GitHub 排队还会带来额外延迟。运行摘要中的“触发方式：schedule”表示真正的自动运行，“workflow_dispatch”表示手动运行。
+5. 等待后续的自动运行。默认计划是北京时间每小时第 **10、25、40、55 分钟**，计划间隔 15 分钟；上游同步和 GitHub 排队还会带来额外延迟。运行摘要中的“触发方式：schedule”表示真正的自动运行，“workflow_dispatch”表示手动运行。
 
 首次基线建立后，不会发送例行“检查完成”微信。下一条相关公告出现之前，没有微信通知是正常情况。
 
@@ -114,7 +114,7 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 
 | 现象 | 处理 |
 |---|---|
-| Actions 中看不到工作流 | 检查路径是否为 `.github/workflows/monitor.yml`，以及是否提交到了默认分支。不能只上传 ZIP。 |
+| Actions 中看不到工作流 | 检查路径是否为 `.github/workflows/codex-monitor.yml`，以及是否提交到了默认分支。不能只上传 ZIP。 |
 | 没有 Run workflow 按钮 | 检查工作流是否在默认分支、Actions 是否启用，以及账号是否有仓库写权限。 |
 | 缺少 PUSHPLUS_TOKEN | 按第 4 步配置 Repository Secret；不是变量 Variables。 |
 | push+ 错误码 903 | 检查 Token 是否复制正确、是否带空格或换行。 |
@@ -126,7 +126,7 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 | 时间到了却没有“已重置” | 预告不是确认；程序不会根据时钟自动宣布重置。 |
 | 测试成功，之后没有微信 | 首次运行只建基线；后面没有新相关信息就保持安静。查看 Actions 的 Summary 确认是否在运行。 |
 | 偶尔比 15 分钟更晚 | GitHub 调度可能延迟，队列繁忙时甚至可能丢弃本轮；下轮回看补查，但超过数据源保留范围的内容仍可能遗漏。 |
-| 想暂停 | Actions → Tibo Codex Monitor → 右上角菜单 → Disable workflow；恢复时 Enable workflow。 |
+| 想暂停 | Actions → Tibo Codex Auto Monitor → 右上角菜单 → Disable workflow；恢复时 Enable workflow。 |
 
 ## 免费运行的边界
 
@@ -148,7 +148,7 @@ Mac 可以按 `Command + Shift + .` 显示隐藏文件。更简单的替代方�
 | `failure_alert_after` | `3` | 连续读取失败多少轮后发一次告警。 |
 | `max_posts_per_message` | `10` | 一次消息最多合并几条动态，减少微信请求；剩余队列留到后续运行。 |
 
-修改频率需要编辑 `.github/workflows/monitor.yml` 的 `cron`。默认值 `2,17,32,47 * * * *` 表示每小时这些分钟运行。不要为了更快提醒而高频请求第三方源。
+修改频率需要编辑 `.github/workflows/codex-monitor.yml` 的 `cron`。默认值 `10,25,40,55 * * * *` 表示每小时这些分钟运行。不要为了更快提醒而高频请求第三方源。
 
 ## 开发与运行说明
 
