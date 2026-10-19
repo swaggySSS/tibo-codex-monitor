@@ -19,6 +19,8 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from time_display import converted_times, describe_times, format_beijing
+
 UTC = timezone.utc
 BEIJING = timezone(timedelta(hours=8))
 FEED_URL = "https://codex-reset.com/api/feed"
@@ -66,7 +68,7 @@ def parse_time(value):
 
 
 def beijing(value):
-    return parse_time(value).astimezone(BEIJING).strftime("%Y-%m-%d %H:%M:%S 北京时间")
+    return format_beijing(parse_time(value))
 
 
 def normalize_text(text):
@@ -183,7 +185,8 @@ SHORT_COMPLETE = re.compile(r"^(?:done(?: and dusted)?|it'?s done|all (?:done|pr
 FUTURE = re.compile(r"\b(?:will|going to|soon|next|later|tomorrow|today|by eod|within|in \d+|landing|should|hope|planning|feeling)\b", re.I)
 CORRECTION = re.compile(r"\b(?:delay(?:ed)?|postpone(?:d)?|cancel(?:led|ed)?|correction|not yet|not done|haven't|hasn't|not resetting|won't reset|will not reset|not reset|no reset)\b", re.I)
 RELATIVE = re.compile(r"\b(?:(?:within|in|over)\s+(?:the\s+)?(?:next\s+)?(?:about\s+)?|next\s+)(?:(\d+|an?|one|two|three|half)\s*)?(minutes?|mins?|hours?|hrs?)\b", re.I)
-TIMING = re.compile(RELATIVE.pattern + r"|\b(?:eod|tomorrow|tonight|today)\b|\b\d{1,2}(?::\d{2})?\s*(?:am|pm)\s*(?:pst|pdt|pt|utc|gmt)\b", re.I)
+TIMING = re.compile(RELATIVE.pattern + r"|\b(?:eod|tomorrow|tonight|today)\b|\b\d{1,2}(?::\d{2})?\s*(?:[ap]\.?m\.?)?\s*(?:pst|pdt|pt|est|edt|et|cst|cdt|ct|mst|mdt|mt|utc|gmt)\b", re.I)
+IN_PROGRESS = re.compile(r"\bare\s+(?:now\s+)?resetting\b|\breset(?:ting)?\b.{0,35}\b(?:in progress|rolling out|propagating|underway)\b", re.I)
 
 
 def reset_topic(text):
@@ -198,32 +201,7 @@ def reset_topic(text):
 
 
 def timing_description(post):
-    text = post.text.replace("’", "'")
-    match = RELATIVE.search(text)
-    if match:
-        amount, unit = match.group(1) or "one", match.group(2)
-        numbers = {"a": 1, "an": 1, "one": 1, "two": 2, "three": 3, "half": 0.5}
-        amount = numbers.get(amount.lower(), float(amount) if amount.isdigit() else 1)
-        seconds = amount * (3600 if unit.lower().startswith(("hour", "hr")) else 60)
-        end = parse_time(post.at) + timedelta(seconds=seconds)
-        return "按发帖时间换算：%s 至 %s（原文：%s；仍为预计）" % (beijing(post.at), beijing(iso(end)), match.group(0))
-    exact = re.search(r"\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(PST|PDT|UTC|GMT)\b", text, re.I)
-    if exact:
-        hour, minute = int(exact.group(1)), int(exact.group(2) or 0)
-        if 1 <= hour <= 12 and 0 <= minute <= 59:
-            offset = {"PST": -8, "PDT": -7, "UTC": 0, "GMT": 0}[exact.group(4).upper()]
-            zone = timezone(timedelta(hours=offset))
-            local = parse_time(post.at).astimezone(zone)
-            hour = hour % 12 + (12 if exact.group(3).lower() == "pm" else 0)
-            target = local.replace(hour=hour, minute=minute, second=0, microsecond=0)
-            if re.search(r"\btomorrow\b", text, re.I):
-                target += timedelta(days=1)
-            elif not re.search(r"\btoday\b", text, re.I):
-                return "原文 %s；未明确日期，未擅自换算日期" % exact.group(0)
-            return "%s（按原文 %s 换算，仍为预计）" % (beijing(iso(target)), exact.group(0))
-    if TIMING.search(text):
-        return "原文含时间窗口；EOD、today、PT 等若缺少明确边界，仅保留原文，不推算精确时刻。"
-    return "原文未提供可确定的执行时间。"
+    return describe_times(post.text, post.at)
 
 
 def classify(post, context, config):
@@ -261,7 +239,11 @@ def classify(post, context, config):
         completed = True
     if completed:
         stages.append("confirmed")
-    if TIMING.search(text) and (not completed or FUTURE.search(text)):
+    progressing = any(IN_PROGRESS.search(clause) and not re.search(r"\b(?:will|not|haven't|hasn't|won't)\b", clause, re.I) for clause in clauses)
+    if progressing and not completed and not CORRECTION.search(text):
+        stages.append("progress")
+    future_timing = any(TIMING.search(clause) and re.search(r"\b(?:will|going to|soon|next|later|tomorrow|tonight|within|landing|should|in \d+)\b", clause, re.I) for clause in clauses)
+    if TIMING.search(text) and (not completed or future_timing):
         stages.append("timing")
     if re.search(r"\bbanked\b", text, re.I):
         stages.append("banked")
@@ -271,7 +253,7 @@ def classify(post, context, config):
         stages.append("announcement")
     if stages == ["teaser"] and not config["include_teasers"]:
         return None
-    labels = {"update": "重置相关的延期、取消或更正信息，以原文为准。", "confirmed": "公开收录的 Tibo 原文包含重置完成表述。", "timing": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。", "banked": "原文涉及可储存的重置额度，领取或使用方式以原文为准。", "announcement": "Tibo 发布额度重置信号或预告，尚未确认执行。", "teaser": "Tibo 提及额度重置，目前仅作为相关讨论或意向。"}
+    labels = {"update": "重置相关的延期、取消或更正信息，以原文为准。", "confirmed": "公开收录的 Tibo 原文包含重置完成表述；个人账户是否到账仍以客户端显示为准。", "progress": "Tibo 原文表示重置正在执行，目前尚未确认全部完成。", "timing": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。", "banked": "原文涉及可储存的重置额度，领取或使用方式以原文为准。", "announcement": "Tibo 发布额度重置信号或预告，尚未确认执行。", "teaser": "Tibo 提及额度重置，目前仅作为相关讨论或意向。"}
     return {"stages": stages, "summary": " ".join(labels[stage] for stage in stages), "timing": timing_description(post)}
 
 
@@ -393,19 +375,52 @@ def scope_description(text):
     return "原文提到：" + " / ".join(sorted(set(plans))) if plans else "原文未明确说明"
 
 
-def render_message(items):
-    labels = {"update": "延期/更正", "confirmed": "重置确认", "timing": "时间更新", "banked": "储存重置", "announcement": "预告", "teaser": "相关意向", "uncertain": "待核实的完成消息"}
-    sections = []
+def status_heading(item):
+    if item["type"] == "health":
+        return item["title"]
+    stages, text = item["signal"]["stages"], item["post"]["text"]
+    if "update" in stages:
+        if re.search(r"\b(?:cancelled|canceled|won't reset|will not reset)\b", text, re.I):
+            return "重置取消｜以原文为准"
+        if re.search(r"\b(?:delay|delayed|postpone|postponed)\b", text, re.I):
+            return "重置延期｜尚未确认完成"
+        return "重置更正｜以最新原文为准"
+    if "confirmed" in stages:
+        return "重置确认｜原文称已完成" + ("；另有预告" if "announcement" in stages else "")
+    if "progress" in stages:
+        return "重置执行中｜尚未确认全部完成"
+    if "uncertain" in stages:
+        return "疑似完成消息｜待核实"
+    if "banked" in stages:
+        return "储存重置额度｜状态以原文为准"
+    if "timing" in stages:
+        return "重置时间更新｜仍为预告"
+    if "announcement" in stages:
+        return "重置预告｜待执行"
+    return "重置相关意向｜尚未确认"
+
+
+def notification_title(items):
+    return "Tibo · " + status_heading(items[0]) if len(items) == 1 else "Tibo · Codex 额度动态（%s条）" % len(items)
+
+
+def render_message(items, now=None):
+    generated = beijing(iso(now or utcnow()))
+    sections = ["<p><strong>时间统一采用北京时间（UTC+8）。</strong><br>通知生成时间：%s</p>" % generated]
     for item in items:
         if item["type"] == "health":
             sections.append("<h3>%s</h3><p>%s</p>" % (html.escape(item["title"]), html.escape(item["text"])))
             continue
         post, signal = item["post"], item["signal"]
-        name = " / ".join(labels[stage] for stage in signal["stages"])
-        manual = "原文提到可手动使用" if re.search(r"\b(?:apply|redeem|use.{0,15}(?:whenever|schedule)|on demand)\b", post["text"], re.I) else "是否需手动领取：原文未明确说明"
-        sections.append("<h3>%s</h3><p>%s</p><p>发布：%s<br>预计时间：%s<br>适用范围：%s<br>%s</p><blockquote>%s</blockquote><p><a href=\"%s\">查看 Tibo 原推文</a></p>" % (
-            html.escape(name), html.escape(signal["summary"]), beijing(post["at"]), html.escape(signal["timing"]),
-            html.escape(scope_description(post["text"])), html.escape(manual), html.escape(post["text"][:1800]).replace("\n", "<br>"), html.escape(post["url"], quote=True)))
+        name = status_heading(item)
+        manual = "原文提到可手动使用" if re.search(r"\b(?:apply|redeem|use.{0,15}(?:whenever|schedule)|on demand)\b", post["text"], re.I) else "原文未明确说明"
+        conversions = converted_times(post["text"], post["at"])
+        conversion_html = "<ul>" + "".join("<li>原文 <code>%s</code><br>对应：%s%s</li>" % (html.escape(row["original"]), html.escape(row["beijing"]), "<br><small>" + html.escape(row["note"]) + "</small>" if row["note"] else "") for row in conversions) + "</ul>" if conversions else "<p>北京时间（UTC+8）：原文未提供可确定的执行时间。</p>"
+        completion_note = "<p>完成时刻（北京时间 UTC+8）：原文未提供独立的到账时刻；上方是推文发布时间，不能当成每个账户的实际恢复时刻。</p>" if "confirmed" in signal["stages"] and not conversions else ""
+        sections.append("<h3>【%s】</h3><p>%s</p><p>推文发布时间：%s<br>适用范围：%s<br>是否需手动领取/使用：%s</p>%s<h4>原文时间对应的北京时间（UTC+8）</h4>%s<h4>推文原文（保留原时区）</h4><blockquote>%s</blockquote><p><a href=\"%s\">查看 Tibo 原推文</a></p>" % (
+            html.escape(name), html.escape(signal["summary"]), beijing(post["at"]),
+            html.escape(scope_description(post["text"])), html.escape(manual), completion_note, conversion_html,
+            html.escape(post["text"][:1800]).replace("\n", "<br>"), html.escape(post["url"], quote=True)))
     return "<hr>".join(sections) + '<hr><p>来源：<a href="https://codex-reset.com/">codex-reset.com</a> 公开收录，非 OpenAI/X 官方服务；本程序未独立直连 X 核验。以原文和账户实际额度为准。</p>'
 
 
@@ -486,11 +501,11 @@ def run_check(store, fetch_feed, push, config, now):
     saved = checkpoint(store, state, saved)
     items = sorted(state["outbox"].items(), key=lambda pair: pair[1]["at"])[:config["max_posts_per_message"]]
     if items:
-        content = render_message([item for _, item in items])
+        content = render_message([item for _, item in items], now=now)
         while len(content) > 18000 and len(items) > 1:
             items.pop()
-            content = render_message([item for _, item in items])
-        title = "Tibo · Codex 额度动态（%s条）" % len(items)
+            content = render_message([item for _, item in items], now=now)
+        title = notification_title([item for _, item in items])
         receipt = push.send(title, content)
         for key, item in items:
             state["accepted"][key] = {"at": iso(now), "receipt": receipt, "status": "accepted_not_delivery_verified"}
@@ -562,7 +577,7 @@ def main():
             return 0
         push = PushPlus(os.getenv("PUSHPLUS_TOKEN", ""))
         if args.mode == "test":
-            push.send("Tibo 监控 · 微信推送测试", "<p>这是一条部署测试消息，不是额度重置公告。</p><p>若你在微信看到本消息，说明 GitHub 到 push+ 的推送通道可用。</p>")
+            push.send("Tibo 监控 · 微信推送测试", "<p>这是一条部署测试消息，不是额度重置公告。</p><p>通知生成时间：%s</p><p>显示时间统一采用北京时间（UTC+8）；原文中能确定的美国时间另附换算结果。</p>" % beijing(iso(utcnow())))
             summary(["测试请求已被 push+ 受理。请以手机实际收到为准；这不代表额度发生重置。", "下一步：mode 选择 check，手动运行一次建立监控基线。"])
             return 0
         if args.local_state:
