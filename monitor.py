@@ -424,6 +424,24 @@ def render_message(items, now=None):
     return "<hr>".join(sections) + '<hr><p>来源：<a href="https://codex-reset.com/">codex-reset.com</a> 公开收录，非 OpenAI/X 官方服务；本程序未独立直连 X 核验。以原文和账户实际额度为准。</p>'
 
 
+def render_test_message(now):
+    """Exercise the real renderer with clearly labelled, fixed synthetic posts."""
+    items = []
+    for index, text in enumerate([
+        "We will reset Codex usage limits for all paid users.",
+        "Codex usage reset on 2026-10-19 at 6pm PT.",
+        "We have reset Codex usage limits for all paid users.",
+    ]):
+        post = Post("test-%s" % index, text, "2026-10-19T16:00:00Z", "https://x.com/thsottiaux", [])
+        signal = classify(post, {post.id: post}, DEFAULTS)
+        items.append({"type": "post", "post": asdict(post), "signal": signal})
+    notice = ("<h2>新版微信通知测试 · 全部为虚构示例</h2>"
+              "<p><strong>这不是额度重置公告。</strong>下方三条推文、推文发布时间及重置状态均为虚构，"
+              "用于检查预告、美国时间换算和完成确认的显示。通知生成时间是本次实际测试时间；"
+              "示例链接仅指向账号主页。正文沿用正式推送模板。</p>")
+    return notice + render_message(items, now=now)
+
+
 def checkpoint(store, state, saved):
     if state != saved:
         store.save(state)
@@ -577,8 +595,8 @@ def main():
             return 0
         push = PushPlus(os.getenv("PUSHPLUS_TOKEN", ""))
         if args.mode == "test":
-            push.send("Tibo 监控 · 微信推送测试", "<p>这是一条部署测试消息，不是额度重置公告。</p><p>通知生成时间：%s</p><p>显示时间统一采用北京时间（UTC+8）；原文中能确定的美国时间另附换算结果。</p>" % beijing(iso(utcnow())))
-            summary(["测试请求已被 push+ 受理。请以手机实际收到为准；这不代表额度发生重置。", "下一步：mode 选择 check，手动运行一次建立监控基线。"])
+            push.send("Tibo 监控 · 新版模板测试（虚构示例）", render_test_message(utcnow()))
+            summary(["测试请求已被 push+ 受理。请以手机实际收到为准；这不代表额度发生重置。", "本条包含预告、美国时间换算、完成确认三个虚构示例；未修改监控基线或去重状态。"])
             return 0
         if args.local_state:
             store = FileStore(args.local_state)
