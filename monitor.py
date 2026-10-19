@@ -449,13 +449,15 @@ def checkpoint(store, state, saved):
     return saved
 
 
-def render_diagnostic_message(now, event, run_id):
-    trigger = {"schedule": "schedule（GitHub 自动定时）", "workflow_dispatch": "workflow_dispatch（手动触发）"}.get(event, event or "未知")
+def render_diagnostic_message(now, event, run_id, source=""):
+    trigger = {"schedule": "schedule（GitHub 自动定时）", "workflow_dispatch": "workflow_dispatch（API 或手动触发）"}.get(event, event or "未知")
+    source_label = "cron-job.org（调用方声明）" if event == "workflow_dispatch" and source == "cron-job.org" else "GitHub 原生定时" if event == "schedule" else "手动运行或其他 API 调用"
     return ("<h3>5分钟定时诊断通知</h3>"
             "<p>这是一条调试消息，不是额度重置公告。诊断期间每次运行均推送，无需有新推文。</p>"
-            "<p>触发方式：%s<br>发送时间：%s<br>GitHub 运行编号：%s</p>"
-            "<p>看到 schedule 表示 GitHub 自动定时触发；workflow_dispatch 表示手动触发。</p>") % (
-                html.escape(trigger), beijing(iso(now)), html.escape(run_id or "本地运行"))
+            "<p>触发方式：%s<br>请求来源：%s<br>发送时间：%s<br>GitHub 运行编号：%s</p>"
+            "<p>cron-job.org 自动调用 GitHub API 时，触发方式也显示 workflow_dispatch；"
+            "是否按计划自动触发，请对照 cron-job.org 的执行记录与本条运行编号。</p>") % (
+                html.escape(trigger), source_label, beijing(iso(now)), html.escape(run_id or "本地运行"))
 
 
 def run_check(store, fetch_feed, push, config, now):
@@ -605,8 +607,9 @@ def main():
         push = PushPlus(os.getenv("PUSHPLUS_TOKEN", ""))
         if args.mode == "diagnostic":
             event = os.getenv("GITHUB_EVENT_NAME", "local")
-            label = "自动" if event == "schedule" else "手动/本地"
-            push.send("Tibo 监控 · 5分钟诊断（%s）" % label, render_diagnostic_message(utcnow(), event, os.getenv("GITHUB_RUN_ID", "")))
+            source = os.getenv("MONITOR_TRIGGER_SOURCE", "")
+            label = "cron-job.org" if event == "workflow_dispatch" and source == "cron-job.org" else "自动" if event == "schedule" else "API/手动/本地"
+            push.send("Tibo 监控 · 5分钟诊断（%s）" % label, render_diagnostic_message(utcnow(), event, os.getenv("GITHUB_RUN_ID", ""), source))
             summary(["诊断触发方式：" + event, "固定诊断微信已被 push+ 受理，请核对手机实际送达。", "本轮未读取推文、未访问监控状态；诊断不依赖新推文或去重结果。"])
             return 0
         if args.mode == "test":

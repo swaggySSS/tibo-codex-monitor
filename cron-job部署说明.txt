@@ -1,0 +1,65 @@
+cron-job.org + GitHub Actions + push+ 部署
+
+目标
+先每 5 分钟发送一条固定诊断微信，确认至少两轮计划执行和微信送达，再切回每 15 分钟检查真实推文。电脑可以关机，任务在云端执行。
+
+1. 注册并登录 cron-job.org
+https://console.cron-job.org/
+注册、邮箱验证、密码和服务条款由账号主人自行完成。密码、验证码和 Token 不要发送到聊天。
+
+2. 创建 GitHub fine-grained personal access token（由本人操作）
+https://github.com/settings/personal-access-tokens/new
+Token name: cron-job-tibo-monitor
+Expiration: 建议 90 天；到期前需手动更换，否则触发会失败。
+Resource owner: swaggySSS
+Repository access: Only select repositories → tibo-codex-monitor
+Repository permissions: Actions → Read and write
+Metadata 的默认只读权限保留；不添加 Contents、Secrets、Administration 或 Account 权限。
+核对只选了这个仓库，再由本人点击 Generate token，复制生成的 Token。
+这是用于触发 Actions 的 GitHub Token，不是 push+ Token。push+ Token 继续留在 GitHub Secrets。
+
+3. 新建 cron-job.org 任务
+Title: Tibo Codex Monitor - 5min diagnostic
+URL:
+https://api.github.com/repos/swaggySSS/tibo-codex-monitor/actions/workflows/codex-monitor.yml/dispatches
+时区: Asia/Shanghai
+计划: 每 5 分钟一次（*/5 * * * *；或界面中的 Every 5 minutes）
+请求方法: POST
+超时: 30 秒
+保存响应: 启用，方便核对返回的 GitHub run ID/链接；不要在聊天粘贴请求授权头。
+
+Headers:
+Accept: application/vnd.github+json
+Content-Type: application/json
+X-GitHub-Api-Version: 2026-03-10
+Authorization: Bearer 你的GitHubToken
+
+Authorization 的值需要由本人粘贴：Bearer 后一个空格，再接完整 Token，不要换行。不要把 Token 填入 URL 或请求正文。
+
+Body（5分钟固定诊断）：
+{"ref":"main","inputs":{"mode":"diagnostic","trigger_source":"cron-job.org"}}
+
+按界面选项启用失败通知、失败后恢复通知，以及任务自动停用通知。保存并启用任务。
+
+4. 验收
+先使用 cron-job.org 的 Test run 检查配置。随后必须在无人点击的情况下，至少出现两轮相隔约 5 分钟的计划执行，并且收到对应微信。
+三层核对：
+（1）cron-job.org 历史显示计划执行时间、实际执行时间，以及 GitHub 接口 HTTP 200。
+（2）GitHub Actions 出现对应 run ID、event=workflow_dispatch、来源声明 cron-job.org，运行成功。
+（3）手机收到标题“Tibo 监控 · 5分钟诊断（cron-job.org）”，正文显示北京时间和同一个 run ID。
+接口受理成功只说明已触发；GitHub 作业成功并且手机实际收到，才能确认整条链路。
+
+5. 确认后切回正式监控
+编辑同一个 cron-job.org 任务，改成：
+Title: Tibo Codex Monitor - 15min monitoring
+计划: 每 15 分钟一次（*/15 * * * *）
+Body:
+{"ref":"main","inputs":{"mode":"check","trigger_source":"cron-job.org"}}
+其余 URL、Headers 不变。
+保存后核对至少一次计划执行的 GitHub Summary。真实监控没有新相关信息时不会发例行微信。
+保留 monitor-state 分支，不删除基线。原生 schedule-probe 保持停用，不另建并行任务。
+
+维护
+GitHub Token 到期时换新，并只更新此任务的 Authorization 值。
+cron-job.org 接口失败告警不等于 GitHub 作业失败告警；任务执行情况仍需对照 Actions。
+云服务可能出现延迟，配置的间隔不是严格准点保证。

@@ -13,6 +13,14 @@ name: Tibo Codex Auto Monitor
           - test
           - preview
           - diagnostic
+      trigger_source:
+        description: '请求来源（调用方声明），用于诊断通知标注'
+        required: true
+        default: manual
+        type: choice
+        options:
+          - manual
+          - cron-job.org
 
 permissions:
   contents: read
@@ -41,12 +49,14 @@ jobs:
       - name: Record trigger
         env:
           MONITOR_SCHEDULE: ${{ github.event.schedule || 'manual' }}
+          MONITOR_TRIGGER_SOURCE: ${{ inputs.trigger_source || 'manual' }}
         run: |
           python - <<'PY'
           import os
           from datetime import datetime, timedelta, timezone
           lines = [
               "触发方式：" + os.environ["GITHUB_EVENT_NAME"],
+              "请求来源（调用方声明）：" + os.environ["MONITOR_TRIGGER_SOURCE"],
               "定时规则：" + os.environ["MONITOR_SCHEDULE"],
               "执行分支：" + os.environ["GITHUB_REF_NAME"],
               "启动时间：" + datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S") + " 北京时间（UTC+8）",
@@ -62,5 +72,6 @@ jobs:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
           MONITOR_MODE: ${{ inputs.mode || 'check' }}
+          MONITOR_TRIGGER_SOURCE: ${{ inputs.trigger_source || 'manual' }}
           PYTHONUNBUFFERED: '1'
         run: python monitor.py --mode "$MONITOR_MODE"

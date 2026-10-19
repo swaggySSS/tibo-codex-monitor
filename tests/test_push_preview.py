@@ -14,7 +14,12 @@ class TestPushPreview(unittest.TestCase):
         self.assertIn("schedule（GitHub 自动定时）", body)
         self.assertIn("2026-10-19 12:00:00 北京时间（UTC+8）", body)
         self.assertIn("12345", body)
-        self.assertIn("workflow_dispatch（手动触发）", m.render_diagnostic_message(NOW, "workflow_dispatch", "23456"))
+        self.assertIn("workflow_dispatch（API 或手动触发）", m.render_diagnostic_message(NOW, "workflow_dispatch", "23456"))
+        external = m.render_diagnostic_message(NOW, "workflow_dispatch", "34567", "cron-job.org")
+        self.assertIn("cron-job.org（调用方声明）", external)
+        self.assertIn("2026-10-19 12:00:00 北京时间（UTC+8）", external)
+        self.assertIn("34567", external)
+        self.assertNotIn("workflow_dispatch（手动触发）", external)
 
     def test_diagnostic_push_does_not_require_feed_or_state(self):
         with patch("sys.argv", ["monitor.py", "--mode", "diagnostic"]), \
