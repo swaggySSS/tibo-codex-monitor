@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "started_at": "2026-10-19T03:40:37Z",
+  "initialized": true,
+  "posts": {
+    "2106967126250791091": {
+      "fingerprint": "0694aacb66d62e742a92e8d5",
+      "post": {
+        "id": "2106967126250791091",
+        "text": "Facts",
+        "at": "2026-10-05T04:38:03Z",
+        "url": "https://x.com/thsottiaux/status/2106967126250791091",
+        "parents": [
+          "2106960991737311651"
+        ]
+      }
+    },
+    "2107158998495748264": {
+      "fingerprint": "2f2326154c035e0b2f3e1487",
+      "post": {
+        "id": "2107158998495748264",
+        "text": "Day 1/\n\nWe have optimized the default speed to be ~50% faster across GPT-6 Astra and GPT-6.1 Sol through the subscription across all our products and partners using Sign in With ChatGPT (including OpenCode, Pi, Amp, Devin, ...).\n\nNo changes needed on your end and this should be felt within the next two hours.",
+        "at": "2026-10-05T17:20:29Z",
+        "url": "https://x.com/thsottiaux/status/2107158998495748264",
+        "parents": []
+      }
+    },
+    "2107301501215613206": {
+      "fingerprint": "3c739e1f922f2f16c3e799a8",
+      "post": {
+        "id": "2107301501215613206",
+        "text": "You can be part of the judge panel for the 28 days",
+        "at": "2026-10-06T02:46:44Z",
+        "url": "https://x.com/thsottiaux/status/2107301501215613206",
+        "parents": [
+          "2107159574474064141"
+        ]
+      }
+    },
+    "2107314411975381479": {
+      "fingerprint": "3a5a992fec90935a4bf920bd",
+      "post": {
+        "id": "2107314411975381479",
+        "text": "Let’s call upon the @poteto",
+        "at": "2026-10-06T03:38:02Z",
+        "url": "https://x.com/thsottiaux/status/2107314411975381479",
+        "parents": [
+          "2107312311254065499"
+        ]
+      }
+    },
+    "2107320000554123426": {
+      "fingerprint": "061e347d0dd08882bab18916",
+      "post": {
+        "id": "2107320000554123426",
+        "text": "Will be even more blissful to manage both",
+        "at": "2026-10-06T04:00:14Z",
+        "url": "https://x.com/thsottiaux/status/2107320000554123426",
+        "parents": [
+          "2107310695373287731"
+        ]
+      }
+    },
+    "2107558288934216153": {
+      "fingerprint": "32c83c76b36acc67656cc504",
+      "post": {
+        "id": "2107558288934216153",
+        "text": "No dodge, just three updates today",
+        "at": "2026-10-06T19:47:07Z",
+        "url": "https://x.com/thsottiaux/status/2107558288934216153",
+        "parents": [
+          "2107557816080953440"
+        ]
+      }
+    },
+    "2107575657014468879": {
+      "fingerprint": "c8fd74975a01c44459f43fdf",
+      "post": {
+        "id": "2107575657014468879",
+        "text": "Roundup of Day 2/\n\n2.1/ Approve for me (auto-review) is now included and does not use usage. Can be between 2-10% of plan when used. Also better for you.\n2.2/ Simplified API for builders.\n2.3/ Meeting notes integrated.\n2.4/ Decisions API live for builders. Will use in the app to improve the experience.",
+        "at": "2026-10-06T20:56:08Z",
+        "url": "https://x.com/thsottiaux/status/2107575657014468879",
+        "parents": []
+      }
+    },
+    "2107577536779870210": {
+      "fingerprint": "406b5be2200f3dfd6f101f97",
+      "post": {
+        "id": "2107577536779870210",
+        "text": "I do like giving resets",
+        "at": "2026-10-06T21:03:36Z",
+        "url": "https://x.com/thsottiaux/status/2107577536779870210",
+        "parents": [
+          "2107574802534052325"
+        ]
+      }
+    },
+    "2107578625419866469": {
+      "fingerprint": "318d84cd9eb601ddf53253d9",
+      "post": {
+        "id": "2107578625419866469",
+        "text": "Four updates or a reset. Or both. How was day 2. https://t.co/s8HNYAaVjH",
+        "at": "2026-10-06T21:07:55Z",
+        "url": "https://x.com/thsottiaux/status/2107578625419866469",
+        "parents": []
+      }
+    },
+    "2107579151322591412": {
+      "fingerprint": "6ca8126ca09fd359e9946b91",
+      "post": {
+        "id": "2107579151322591412",
+        "text": "OK fake tibo",
+        "at": "2026-10-06T21:10:01Z",
+        "url": "https://x.com/thsottiaux/status/2107579151322591412",
+        "parents": [
+          "2107577110311362866"
+        ]
+      }
+    },
+    "2107586622766366739": {
+      "fingerprint": "b14530c23fcc4198b83fcee6",
+      "post": {
+        "id": "2107586622766366739",
+        "text": "The math doesn’t math, but the rules are the rules",
+        "at": "2026-10-06T21:39:42Z",
+        "url": "https://x.com/thsottiaux/status/2107586622766366739",
+        "parents": [
+          "2107581475755589952"
+        ]
+      }
+    },
+    "2107587334661378382": {
+      "fingerprint": "43e3c6be60a16b69ff404bb7",
+      "post": {
+        "id": "2107587334661378382",
+        "text": "Feels right, but such is the game",
+        "at": "2026-10-06T21:42:32Z",
+        "url": "https://x.com/thsottiaux/status/2107587334661378382",
+        "parents": [
+          "2107586415953391622"
+        ]
+      }
+    },
+    "2107592271952748814": {
+      "fingerprint": "cc105719a1f7ae0e7a600b7f",
+      "post": {
+        "id": "2107592271952748814",
+        "text": "Is this how the internet works 👀",
+        "at": "2026-10-06T22:02:09Z",
+        "url": "https://x.com/thsottiaux/status/2107592271952748814",
+        "parents": [
+          "2107583320569819588"
+        ]
+      }
+    },
+    "2107592473048715573": {
+      "fingerprint": "9a21dc2d6bebe999915106e9",
+      "post": {
+        "id": "2107592473048715573",
+        "text": "I accept your vote",
+        "at": "2026-10-06T22:02:57Z",
+        "url": "https://x.com/thsottiaux/status/2107592473048715573",
+        "parents": [
+          "2107558459713425516"
+        ]
+      }
+    },
+    "2107676072871600470": {
+      "fingerprint": "6110dc3f1d9834fa8220e4c3",
+      "post": {
+        "id": "2107676072871600470",
+        "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
+        "at": "2026-10-07T03:35:09Z",
+        "url": "https://x.com/thsottiaux/status/2107676072871600470",
+        "parents": []
+      }
+    },
+    "2107676261099426030": {
+      "fingerprint": "15c9fe9e2818addbd7f8fffc",
+      "post": {
+        "id": "2107676261099426030",
+        "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
+        "at": "2026-10-07T03:35:54Z",
+        "url": "https://x.com/thsottiaux/status/2107676261099426030",
+        "parents": [
+          "2107676072871600470"
+        ]
+      }
+    },
+    "2107676653895967106": {
+      "fingerprint": "98fcb203400fe661d0407d7b",
+      "post": {
+        "id": "2107676653895967106",
+        "text": "Also! Good evening!!",
+        "at": "2026-10-07T03:37:27Z",
+        "url": "https://x.com/thsottiaux/status/2107676653895967106",
+        "parents": [
+          "2107676072871600470"
+        ]
+      }
+    },
+    "2107913674593644711": {
+      "fingerprint": "70b03c5e7a386674db3f4459",
+      "post": {
+        "id": "2107913674593644711",
+        "text": "Day 3/\n\nThe big one is GPT-6 in Chat, but today is also a little celebration day with a new high of 40M active users across Codex and ChatGPT Work.\n\nLoading a banked reset in everyone's paid accounts. See you again tomorrow! https://t.co/mHSI0PbWfe",
+        "at": "2026-10-07T19:19:17Z",
+        "url": "https://x.com/thsottiaux/status/2107913674593644711",
+        "parents": []
+      }
+    },
+    "2107913738791596286": {
+      "fingerprint": "5ec8bf2ce88611139b070054",
+      "post": {
+        "id": "2107913738791596286",
+        "text": "Will be there by EOD PST.",
+        "at": "2026-10-07T19:19:33Z",
+        "url": "https://x.com/thsottiaux/status/2107913738791596286",
+        "parents": [
+          "2107913674593644711"
+        ]
+      }
+    },
+    "2108040921044639779": {
+      "fingerprint": "1e21cd2e66062cc0a9e4c946",
+      "post": {
+        "id": "2108040921044639779",
+        "text": "Confirmed landed across all accounts. How are we doing so far? https://t.co/tzw7dNX4pN",
+        "at": "2026-10-08T03:44:55Z",
+        "url": "https://x.com/thsottiaux/status/2108040921044639779",
+        "parents": []
+      }
+    },
+    "2108645667451318747": {
+      "fingerprint": "4eec9f1a32b12fcbb4b4af41",
+      "post": {
+        "id": "2108645667451318747",
+        "text": "Day 5/\n\nComposer predictions in the desktop app. Often leads to a double take with how on point they are. Included in the Pro plans without consuming usage. https://t.co/02dqoClrWn",
+        "at": "2026-10-09T19:47:58Z",
+        "url": "https://x.com/thsottiaux/status/2108645667451318747",
+        "parents": []
+      }
+    },
+    "2108778939057664357": {
+      "fingerprint": "265f15a9aa0b5b03ef6cb159",
+      "post": {
+        "id": "2108778939057664357",
+        "text": "@rohit3a Folks. Why do you think we picked 300k for context length for Codex. \n\nWe ran the numbers and it’s better. We can run it at 1M too but it would just cost more of the usage. Good defaults are important.",
+        "at": "2026-10-10T04:37:32Z",
+        "url": "https://x.com/thsottiaux/status/2108778939057664357",
+        "parents": [
+          "2108277836285161798"
+        ]
+      }
+    },
+    "2109045220411351517": {
+      "fingerprint": "0de146a5b67470b4272b1362",
+      "post": {
+        "id": "2109045220411351517",
+        "text": "Day 6/ Reset",
+        "at": "2026-10-10T22:15:39Z",
+        "url": "https://x.com/thsottiaux/status/2109045220411351517",
+        "parents": []
+      }
+    },
+    "2109045392684032299": {
+      "fingerprint": "680ade00127d5ad71d09d8d1",
+      "post": {
+        "id": "2109045392684032299",
+        "text": "Global reset by EOD. May the tokens do good things for you.",
+        "at": "2026-10-10T22:16:20Z",
+        "url": "https://x.com/thsottiaux/status/2109045392684032299",
+        "parents": [
+          "2109045220411351517"
+        ]
+      }
+    },
+    "2109090080497508356": {
+      "fingerprint": "e15a9b240c1657e9b84ba8a3",
+      "post": {
+        "id": "2109090080497508356",
+        "text": "The day we reach perfection it will be resets from there onwards https://t.co/I6A9WHOjXT",
+        "at": "2026-10-11T01:13:54Z",
+        "url": "https://x.com/thsottiaux/status/2109090080497508356",
+        "parents": []
+      }
+    },
+    "2109132167112782291": {
+      "fingerprint": "aed01257ea4c0600f5b926bb",
+      "post": {
+        "id": "2109132167112782291",
+        "text": "Put the reset in the bag. All propagated. https://t.co/HGxaD3Zdcj",
+        "at": "2026-10-11T04:01:09Z",
+        "url": "https://x.com/thsottiaux/status/2109132167112782291",
+        "parents": []
+      }
+    },
+    "2109430894604026039": {
+      "fingerprint": "ec6f2edd8f935d40c18dd351",
+      "post": {
+        "id": "2109430894604026039",
+        "text": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
+        "at": "2026-10-11T23:48:11Z",
+        "url": "https://x.com/thsottiaux/status/2109430894604026039",
+        "parents": [
+          "2109430343346581527"
+        ]
+      }
+    },
+    "2109438305188327838": {
+      "fingerprint": "d1b957aa4fa4539c0c0bd5c8",
+      "post": {
+        "id": "2109438305188327838",
+        "text": "We're all proud of you @birdabo. Thank you for solving this one, hadn't thought about it",
+        "at": "2026-10-12T00:17:38Z",
+        "url": "https://x.com/thsottiaux/status/2109438305188327838",
+        "parents": [
+          "2109161917822742814"
+        ]
+      }
+    },
+    "2109439315570999598": {
+      "fingerprint": "561de01b1929686f64167b64",
+      "post": {
+        "id": "2109439315570999598",
+        "text": "The results of this poll has gotten me confused. I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits in order to smoothen the demand curve. https://t.co/zwn7kboMhT",
+        "at": "2026-10-12T00:21:38Z",
+        "url": "https://x.com/thsottiaux/status/2109439315570999598",
+        "parents": []
+      }
+    },
+    "2109812216212099456": {
+      "fingerprint": "5899ec85170b3df237ebf634",
+      "post": {
+        "id": "2109812216212099456",
+        "text": "Day 8/ Reset",
+        "at": "2026-10-13T01:03:25Z",
+        "url": "https://x.com/thsottiaux/status/2109812216212099456",
+        "parents": []
+      }
+    },
+    "2109812360596865224": {
+      "fingerprint": "44e69cdab67611094078bd0e",
+      "post": {
+        "id": "2109812360596865224",
+        "text": "Global reset landing by EOD PST time. Enjoy",
+        "at": "2026-10-13T01:03:59Z",
+        "url": "https://x.com/thsottiaux/status/2109812360596865224",
+        "parents": [
+          "2109812216212099456"
+        ]
+      }
+    },
+    "2109873287853707513": {
+      "fingerprint": "89b58b270759c2e890657fd2",
+      "post": {
+        "id": "2109873287853707513",
+        "text": "What would you like with your side of reset? It's done. https://t.co/gpNaB6otgy",
+        "at": "2026-10-13T05:06:06Z",
+        "url": "https://x.com/thsottiaux/status/2109873287853707513",
+        "parents": []
+      }
+    },
+    "2109873307722121591": {
+      "fingerprint": "9bd81868c5bd813b677210d0",
+      "post": {
+        "id": "2109873307722121591",
+        "text": "Mashed @poteto on the house.",
+        "at": "2026-10-13T05:06:10Z",
+        "url": "https://x.com/thsottiaux/status/2109873307722121591",
+        "parents": [
+          "2109873287853707513"
+        ]
+      }
+    },
+    "2109892247580000595": {
+      "fingerprint": "c0d7a7281c7e631aee3c3ecc",
+      "post": {
+        "id": "2109892247580000595",
+        "text": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope to get it done soon.",
+        "at": "2026-10-13T06:21:26Z",
+        "url": "https://x.com/thsottiaux/status/2109892247580000595",
+        "parents": []
+      }
+    },
+    "2110595484180214059": {
+      "fingerprint": "9b40e3d87d3c15e5dd484b84",
+      "post": {
+        "id": "2110595484180214059",
+        "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
+        "at": "2026-10-15T04:55:51Z",
+        "url": "https://x.com/thsottiaux/status/2110595484180214059",
+        "parents": []
+      }
+    },
+    "2110595554036400151": {
+      "fingerprint": "eba0790c03bbaf3aa21e73c9",
+      "post": {
+        "id": "2110595554036400151",
+        "text": "Landing within the next 2 hours",
+        "at": "2026-10-15T04:56:07Z",
+        "url": "https://x.com/thsottiaux/status/2110595554036400151",
+        "parents": [
+          "2110595484180214059"
+        ]
+      }
+    },
+    "2110750421367287996": {
+      "fingerprint": "de1a8ba273787634c37e7d66",
+      "post": {
+        "id": "2110750421367287996",
+        "text": "Day 11/\n\nWe've landed a series of changes and more compute to very significantly decrease the occurrence of the disruptive \"Selected model is at capacity. Please try a different model\". When it does happen, it should also eventually just continue by itself and not just block on it.\n\nLet us know if you still see it out there in the wild and we'll take a look.",
+        "at": "2026-10-15T15:11:30Z",
+        "url": "https://x.com/thsottiaux/status/2110750421367287996",
+        "parents": []
+      }
+    },
+    "2110951585983631505": {
+      "fingerprint": "02e58ceb36719257c8af2491",
+      "post": {
+        "id": "2110951585983631505",
+        "text": "@maria_rcks Can’t argue with that, Let’s break the cycle.",
+        "at": "2026-10-16T04:30:52Z",
+        "url": "https://x.com/thsottiaux/status/2110951585983631505",
+        "parents": [
+          "2110880198660882719"
+        ]
+      }
+    },
+    "2111244596131111253": {
+      "fingerprint": "28d64bb1a56dec4fe7329830",
+      "post": {
+        "id": "2111244596131111253",
+        "text": "Day 12/\n\nWe’ve made improvements to Codex & Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.",
+        "at": "2026-10-16T23:55:11Z",
+        "url": "https://x.com/thsottiaux/status/2111244596131111253",
+        "parents": []
+      }
+    },
+    "2111492673890824348": {
+      "fingerprint": "3f3194a28be3be998eb275ec",
+      "post": {
+        "id": "2111492673890824348",
+        "text": "Day 13/ Le limit reset https://t.co/zXd2DIH5xf",
+        "at": "2026-10-17T16:20:57Z",
+        "url": "https://x.com/thsottiaux/status/2111492673890824348",
+        "parents": []
+      }
+    },
+    "2111492738025959922": {
+      "fingerprint": "8ad56d908dab326635397b6f",
+      "post": {
+        "id": "2111492738025959922",
+        "text": "Landing sometime today by EOD PST",
+        "at": "2026-10-17T16:21:13Z",
+        "url": "https://x.com/thsottiaux/status/2111492738025959922",
+        "parents": [
+          "2111492673890824348"
+        ]
+      }
+    },
+    "2111523462372372942": {
+      "fingerprint": "d7a1ee43dbad724f5e458cdf",
+      "post": {
+        "id": "2111523462372372942",
+        "text": "@gabrielchua Bit blurry",
+        "at": "2026-10-17T18:23:18Z",
+        "url": "https://x.com/thsottiaux/status/2111523462372372942",
+        "parents": []
+      }
+    },
+    "2111523665817047359": {
+      "fingerprint": "c47aeeb1c2964f3f004a1598",
+      "post": {
+        "id": "2111523665817047359",
+        "text": "@ajambrosino @petergyang @amorriscode 🍺👌",
+        "at": "2026-10-17T18:24:06Z",
+        "url": "https://x.com/thsottiaux/status/2111523665817047359",
+        "parents": []
+      }
+    },
+    "2111566005684289735": {
+      "fingerprint": "a4c3ed04a95a3da14a9d235c",
+      "post": {
+        "id": "2111566005684289735",
+        "text": "Done",
+        "at": "2026-10-17T21:12:21Z",
+        "url": "https://x.com/thsottiaux/status/2111566005684289735",
+        "parents": []
+      }
+    },
+    "2111583927156760690": {
+      "fingerprint": "04a9d82ffbb2686106eaa4c0",
+      "post": {
+        "id": "2111583927156760690",
+        "text": "Pot committed",
+        "at": "2026-10-17T22:23:34Z",
+        "url": "https://x.com/thsottiaux/status/2111583927156760690",
+        "parents": [
+          "2111518299888767066"
+        ]
+      }
+    },
+    "2111687989328011357": {
+      "fingerprint": "903d2fba4c33e1f07c6055af",
+      "post": {
+        "id": "2111687989328011357",
+        "text": "@rl_env Quick to jump to conclusion. This is my OpenAI work dot coordinating with my personal dot. Two entirely separate accounts.",
+        "at": "2026-10-18T05:17:04Z",
+        "url": "https://x.com/thsottiaux/status/2111687989328011357",
+        "parents": []
+      }
+    },
+    "2111832959842161136": {
+      "fingerprint": "0bf98efbffadb72bbafd36af",
+      "post": {
+        "id": "2111832959842161136",
+        "text": "@argofowl EU sorry. We’re making it so that\n\n(a) if you had created a dot elsewhere and find yourself in the EU it will keep working\n(b) dots are coming to the EU in the future",
+        "at": "2026-10-18T14:53:08Z",
+        "url": "https://x.com/thsottiaux/status/2111832959842161136",
+        "parents": []
+      }
+    },
+    "2111849858374177222": {
+      "fingerprint": "347dda335f137de63dee51cf",
+      "post": {
+        "id": "2111849858374177222",
+        "text": "What’s cooking today",
+        "at": "2026-10-18T16:00:17Z",
+        "url": "https://x.com/thsottiaux/status/2111849858374177222",
+        "parents": []
+      }
+    },
+    "2111918635849801739": {
+      "fingerprint": "dde50da71db310d8485ee8eb",
+      "post": {
+        "id": "2111918635849801739",
+        "text": "We’ll see",
+        "at": "2026-10-18T20:33:34Z",
+        "url": "https://x.com/thsottiaux/status/2111918635849801739",
+        "parents": [
+          "2111918435877720405"
+        ]
+      }
+    },
+    "2111918768733753664": {
+      "fingerprint": "42bde3f0b8a9f9885677aa1e",
+      "post": {
+        "id": "2111918768733753664",
+        "text": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
+        "at": "2026-10-18T20:34:06Z",
+        "url": "https://x.com/thsottiaux/status/2111918768733753664",
+        "parents": []
+      }
+    },
+    "2111941223187710114": {
+      "fingerprint": "04316e393331734cdf0acc61",
+      "post": {
+        "id": "2111941223187710114",
+        "text": "@LexnLin We do care about local regulation",
+        "at": "2026-10-18T22:03:20Z",
+        "url": "https://x.com/thsottiaux/status/2111941223187710114",
+        "parents": []
+      }
+    },
+    "2111945355596353823": {
+      "fingerprint": "e7f454e08e41625107999744",
+      "post": {
+        "id": "2111945355596353823",
+        "text": "@theo Journalism with additional Theo steps",
+        "at": "2026-10-18T22:19:45Z",
+        "url": "https://x.com/thsottiaux/status/2111945355596353823",
+        "parents": []
+      }
+    },
+    "2111990254408434095": {
+      "fingerprint": "70206f3a8f1046794195f24e",
+      "post": {
+        "id": "2111990254408434095",
+        "text": "Day 14/\n\nSmall quality of life improvement. You can now edit previous messages within a thread in the desktop app. Long time requested, and took way too long to get that one out.",
+        "at": "2026-10-19T01:18:10Z",
+        "url": "https://x.com/thsottiaux/status/2111990254408434095",
+        "parents": []
+      }
+    },
+    "2111994295364571327": {
+      "fingerprint": "23e5cde91717660465b27bc2",
+      "post": {
+        "id": "2111994295364571327",
+        "text": "@JamesStewau0y5 Registers as time travel",
+        "at": "2026-10-19T01:34:13Z",
+        "url": "https://x.com/thsottiaux/status/2111994295364571327",
+        "parents": []
+      }
+    }
+  },
+  "accepted": {},
+  "outbox": {},
+  "health": {
+    "failures": 0,
+    "alerted": false,
+    "last_success_day": "2026-10-19"
+  }
+}
