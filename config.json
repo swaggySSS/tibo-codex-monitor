@@ -1,0 +1,10 @@
+{
+  "feed_url": "https://codex-reset.com/api/feed",
+  "max_feed_age_minutes": 45,
+  "lookback_hours": 72,
+  "include_teasers": true,
+  "include_ambiguous_confirmations": true,
+  "failure_alert_after": 3,
+  "max_posts_per_message": 10,
+  "state_branch": "monitor-state"
+}

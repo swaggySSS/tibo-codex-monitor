@@ -1,0 +1,51 @@
+name: Tibo Codex Monitor
+
+on:
+  schedule:
+    # Avoid the busy top of the hour. UTC and Beijing use the same minute values.
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'test = 微信测试；check = 开始/继续监控；preview = 仅预览'
+        required: true
+        default: check
+        type: choice
+        options:
+          - check
+          - test
+          - preview
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tibo-codex-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    # Run only trusted default-branch code, including when manually triggered.
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Check public posts or test push
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          MONITOR_MODE: ${{ inputs.mode || 'check' }}
+          PYTHONUNBUFFERED: '1'
+        run: python monitor.py --mode "$MONITOR_MODE"
