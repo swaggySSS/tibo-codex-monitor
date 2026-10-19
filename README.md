@@ -1,8 +1,8 @@
 # Tibo 的 Codex 额度重置微信监控
 
-**当前为临时诊断模式：每 5 分钟自动发送一条固定测试微信，不要求有新推文。** 消息会显示触发方式、北京时间和 GitHub 运行编号。只有 `schedule` 才代表自动定时，`workflow_dispatch` 是手动运行。诊断模式不读取推文，也不修改监控基线或去重状态。下方的 15 分钟说明为正式监控配置。
+**当前为临时诊断模式：计划每 5 分钟发送一条固定测试微信，不要求有新推文。** 唯一的自动入口为 `.github/workflows/schedule-probe.yml`，它只用执行器自带 Python 直接调用 push+，无 checkout、安装、作业条件、数据源或去重依赖。消息会显示触发方式、北京时间和 GitHub 运行编号。只有 `schedule` 才代表自动定时。主工作流 `codex-monitor.yml` 暂时仅保留手动入口。下方的 15 分钟说明为正式监控配置。
 
-诊断结束后，将 `.github/workflows/codex-monitor.yml` 的 `cron` 恢复为 `10,25,40,55 * * * *`，并将 `MONITOR_MODE` 恢复为 `${{ inputs.mode || 'check' }}`；同时同步 `workflow.yml` 备份。
+诊断结束后，停用 `Tibo 5 Minute Schedule Probe`，在 `.github/workflows/codex-monitor.yml` 的 `"on"` 下恢复 `schedule` 和 `cron: '10,25,40,55 * * * *'`；同时同步 `workflow.yml` 备份。
 
 GitHub Actions 每 15 分钟检查第三方公开数据源，用 push+ 发到你的微信。无需购买 X API，无需填写 X 密码或 Cookie，无需电脑保持开机，也无需在你的大陆 Windows 服务器上安装任何程序。
 

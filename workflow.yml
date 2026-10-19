@@ -1,9 +1,6 @@
 name: Tibo Codex Auto Monitor
 
 "on":
-  schedule:
-    # Temporary debugging: every scheduled run sends a diagnostic WeChat message.
-    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -64,6 +61,6 @@ jobs:
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
-          MONITOR_MODE: ${{ github.event_name == 'schedule' && 'diagnostic' || inputs.mode || 'check' }}
+          MONITOR_MODE: ${{ inputs.mode || 'check' }}
           PYTHONUNBUFFERED: '1'
         run: python monitor.py --mode "$MONITOR_MODE"

@@ -1,0 +1,45 @@
+name: Tibo 5 Minute Schedule Probe
+
+"on":
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions: {}
+
+jobs:
+  send-wechat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Send one diagnostic WeChat directly
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import html, json, os, re, urllib.request
+          from datetime import datetime, timedelta, timezone
+          token = os.environ.get("PUSHPLUS_TOKEN", "")
+          if not token or any(c.isspace() for c in token):
+              raise SystemExit("PUSHPLUS_TOKEN 缺失或含空白")
+          at = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S") + " 北京时间（UTC+8）"
+          event = os.environ.get("GITHUB_EVENT_NAME", "unknown")
+          run_id = os.environ.get("GITHUB_RUN_ID", "unknown")
+          content = "<h3>每5分钟固定诊断</h3><p>这不是额度重置公告。</p><p>触发方式：%s<br>发送时间：%s<br>运行编号：%s</p>" % (html.escape(event), at, html.escape(run_id))
+          payload = {"token": token, "title": "Tibo 监控 · 5分钟定时探针", "content": content, "template": "html", "channel": "wechat"}
+          request = urllib.request.Request("https://www.pushplus.plus/send", data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"}, method="POST")
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  result = json.load(response)
+          except Exception as exc:
+              raise SystemExit("push+ 请求失败：" + type(exc).__name__) from None
+          if not isinstance(result, dict) or result.get("code") != 200:
+              raise SystemExit("push+ 未受理诊断通知")
+          data = result.get("data")
+          receipt = data if isinstance(data, str) else data.get("shortCode") if isinstance(data, dict) else None
+          if not isinstance(receipt, str) or not re.fullmatch(r"[A-Za-z0-9_-]{6,128}", receipt):
+              raise SystemExit("push+ 未返回有效受理流水号")
+          lines = ["触发方式：" + event, "北京时间：" + at, "运行编号：" + run_id, "push+ 已受理固定诊断通知；请核对微信实际送达。"]
+          print("\n".join(lines))
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as output:
+              output.write("\n\n".join(lines) + "\n")
+          PY
