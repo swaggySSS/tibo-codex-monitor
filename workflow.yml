@@ -2,12 +2,12 @@ name: Tibo Codex Auto Monitor
 
 "on":
   schedule:
-    # Avoid the busy top of the hour. UTC and Beijing use the same minute values.
-    - cron: '10,25,40,55 * * * *'
+    # Temporary debugging: every scheduled run sends a diagnostic WeChat message.
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'test = 微信测试；check = 开始/继续监控；preview = 仅预览'
+        description: 'diagnostic = 固定诊断微信；test = 模板测试；check = 监控；preview = 预览'
         required: true
         default: check
         type: choice
@@ -15,6 +15,7 @@ name: Tibo Codex Auto Monitor
           - check
           - test
           - preview
+          - diagnostic
 
 permissions:
   contents: read
@@ -63,6 +64,6 @@ jobs:
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
-          MONITOR_MODE: ${{ inputs.mode || 'check' }}
+          MONITOR_MODE: ${{ github.event_name == 'schedule' && 'diagnostic' || inputs.mode || 'check' }}
           PYTHONUNBUFFERED: '1'
         run: python monitor.py --mode "$MONITOR_MODE"

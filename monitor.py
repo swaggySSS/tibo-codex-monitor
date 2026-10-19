@@ -449,6 +449,15 @@ def checkpoint(store, state, saved):
     return saved
 
 
+def render_diagnostic_message(now, event, run_id):
+    trigger = {"schedule": "schedule（GitHub 自动定时）", "workflow_dispatch": "workflow_dispatch（手动触发）"}.get(event, event or "未知")
+    return ("<h3>5分钟定时诊断通知</h3>"
+            "<p>这是一条调试消息，不是额度重置公告。诊断期间每次运行均推送，无需有新推文。</p>"
+            "<p>触发方式：%s<br>发送时间：%s<br>GitHub 运行编号：%s</p>"
+            "<p>看到 schedule 表示 GitHub 自动定时触发；workflow_dispatch 表示手动触发。</p>") % (
+                html.escape(trigger), beijing(iso(now)), html.escape(run_id or "本地运行"))
+
+
 def run_check(store, fetch_feed, push, config, now):
     state = store.load()
     existed = state is not None
@@ -572,7 +581,7 @@ def summary(lines):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("check", "test", "preview"), default="check")
+    parser.add_argument("--mode", choices=("check", "test", "preview", "diagnostic"), default="check")
     parser.add_argument("--config", default="config.json")
     parser.add_argument("--local-state", help="本地调试使用；GitHub Actions 不要配置此参数")
     parser.add_argument("--feed-file", help="离线预览或测试 JSON；不可与真实推送 check/test 同用")
@@ -594,6 +603,12 @@ def main():
             summary(lines)
             return 0
         push = PushPlus(os.getenv("PUSHPLUS_TOKEN", ""))
+        if args.mode == "diagnostic":
+            event = os.getenv("GITHUB_EVENT_NAME", "local")
+            label = "自动" if event == "schedule" else "手动/本地"
+            push.send("Tibo 监控 · 5分钟诊断（%s）" % label, render_diagnostic_message(utcnow(), event, os.getenv("GITHUB_RUN_ID", "")))
+            summary(["诊断触发方式：" + event, "固定诊断微信已被 push+ 受理，请核对手机实际送达。", "本轮未读取推文、未访问监控状态；诊断不依赖新推文或去重结果。"])
+            return 0
         if args.mode == "test":
             push.send("Tibo 监控 · 新版模板测试（虚构示例）", render_test_message(utcnow()))
             summary(["测试请求已被 push+ 受理。请以手机实际收到为准；这不代表额度发生重置。", "本条包含预告、美国时间换算、完成确认三个虚构示例；未修改监控基线或去重状态。"])
