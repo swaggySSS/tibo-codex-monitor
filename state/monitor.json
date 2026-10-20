@@ -684,27 +684,14 @@
       }
     }
   },
-  "accepted": {},
-  "outbox": {
+  "accepted": {
     "2112432076767289678:b57576cf21dbc37536f73d63": {
-      "type": "post",
-      "at": "2026-10-20T06:33:48Z",
-      "post": {
-        "id": "2112432076767289678",
-        "text": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy. https://t.co/RZ9WhtI802",
-        "at": "2026-10-20T06:33:48Z",
-        "url": "https://x.com/thsottiaux/status/2112432076767289678",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "announcement"
-        ],
-        "summary": "Tibo 发布额度重置信号或预告，尚未确认执行。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-20T06:45:21Z",
+      "receipt": "cf84d7c018c74617b8e7c3ce9e26411d",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
