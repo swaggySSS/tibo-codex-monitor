@@ -692,6 +692,16 @@
         "url": "https://x.com/thsottiaux/status/2112592264686149749",
         "parents": []
       }
+    },
+    "2112712984644784534": {
+      "fingerprint": "58e2e54d64c61bc58f29c7f3",
+      "post": {
+        "id": "2112712984644784534",
+        "text": "Day 16/\n\nYou can now cache for 12h in the API and for logged in users across Codex & Work we keep cache forever and you don’t have any penalty for coming back to an old conversation or resuming after a few hours and are now guaranteed to hit the cache. https://t.co/0HYeB01KVh",
+        "at": "2026-10-21T01:10:02Z",
+        "url": "https://x.com/thsottiaux/status/2112712984644784534",
+        "parents": []
+      }
     }
   },
   "accepted": {
