@@ -702,6 +702,18 @@
         "url": "https://x.com/thsottiaux/status/2112712984644784534",
         "parents": []
       }
+    },
+    "2112798407928713717": {
+      "fingerprint": "7d29a9e60cbf0f1294217e13",
+      "post": {
+        "id": "2112798407928713717",
+        "text": "I demand a reset",
+        "at": "2026-10-21T06:49:29Z",
+        "url": "https://x.com/thsottiaux/status/2112798407928713717",
+        "parents": [
+          "2112359232595165185"
+        ]
+      }
     }
   },
   "accepted": {
@@ -711,7 +723,28 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2112798407928713717:b2b478f72d6cc70a8bcc0fc0": {
+      "type": "post",
+      "at": "2026-10-21T06:49:29Z",
+      "post": {
+        "id": "2112798407928713717",
+        "text": "I demand a reset",
+        "at": "2026-10-21T06:49:29Z",
+        "url": "https://x.com/thsottiaux/status/2112798407928713717",
+        "parents": [
+          "2112359232595165185"
+        ]
+      },
+      "signal": {
+        "stages": [
+          "teaser"
+        ],
+        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
