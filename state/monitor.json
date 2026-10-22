@@ -784,8 +784,10 @@
   },
   "outbox": {},
   "health": {
-    "failures": 0,
+    "failures": 1,
     "alerted": false,
-    "last_success_day": "2026-10-22"
+    "last_success_day": "2026-10-22",
+    "episode": "2026-10-22T04:00:38Z",
+    "last_error": "数据源更新时间过旧或异常"
   }
 }
