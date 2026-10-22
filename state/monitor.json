@@ -784,7 +784,7 @@
   },
   "outbox": {},
   "health": {
-    "failures": 1,
+    "failures": 2,
     "alerted": false,
     "last_success_day": "2026-10-22",
     "episode": "2026-10-22T04:00:38Z",
