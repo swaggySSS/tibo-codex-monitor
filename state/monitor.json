@@ -868,10 +868,10 @@
   },
   "outbox": {},
   "health": {
-    "failures": 1,
+    "failures": 2,
     "alerted": false,
     "last_success_day": "2026-10-23",
     "episode": "2026-10-23T13:00:43Z",
-    "last_error": "codex-reset.com 返回 HTTP 503"
+    "last_error": "数据源更新时间过旧或异常"
   }
 }
