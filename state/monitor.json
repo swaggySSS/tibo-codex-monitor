@@ -866,12 +866,20 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "health:failure:2026-10-23T13:00:43Z": {
+      "type": "health",
+      "health_event": "failure",
+      "at": "2026-10-23T13:30:34Z",
+      "title": "Tibo 监控数据源受阻",
+      "text": "已连续 3 轮无法获得可信数据：codex-reset.com 返回 HTTP 503。没有把读取失败当成没有新消息；后续继续重试。"
+    }
+  },
   "health": {
-    "failures": 2,
+    "failures": 3,
     "alerted": false,
     "last_success_day": "2026-10-23",
     "episode": "2026-10-23T13:00:43Z",
-    "last_error": "数据源更新时间过旧或异常"
+    "last_error": "codex-reset.com 返回 HTTP 503"
   }
 }
