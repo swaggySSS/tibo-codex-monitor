@@ -871,12 +871,19 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "health:recovery:2026-10-23T13:00:43Z": {
+      "type": "health",
+      "health_event": "recovery",
+      "at": "2026-10-23T13:45:24Z",
+      "title": "Tibo 监控数据源恢复",
+      "text": "公开数据源已恢复有效读取。数据覆盖仍受第三方收录范围限制。"
+    }
+  },
   "health": {
-    "failures": 3,
+    "failures": 0,
     "alerted": true,
     "last_success_day": "2026-10-23",
-    "episode": "2026-10-23T13:00:43Z",
-    "last_error": "codex-reset.com 返回 HTTP 503"
+    "episode": "2026-10-23T13:00:43Z"
   }
 }
