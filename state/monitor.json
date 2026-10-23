@@ -854,48 +854,19 @@
       "at": "2026-10-22T07:00:37Z",
       "receipt": "6df317cf6ecf444993b34fa39adcac52",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2113492187770175603:d72a8aa3b682e53e90d1bc0a": {
-      "type": "post",
-      "at": "2026-10-23T04:46:19Z",
-      "post": {
-        "id": "2113492187770175603",
-        "text": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset!",
-        "at": "2026-10-23T04:46:19Z",
-        "url": "https://x.com/thsottiaux/status/2113492187770175603",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "announcement"
-        ],
-        "summary": "Tibo 发布额度重置信号或预告，尚未确认执行。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-23T05:00:37Z",
+      "receipt": "1ddc606b420a430882cfba537065d0d5",
+      "status": "accepted_not_delivery_verified"
     },
     "2113492502355562875:03a304d2477fcce0430aaf14": {
-      "type": "post",
-      "at": "2026-10-23T04:47:34Z",
-      "post": {
-        "id": "2113492502355562875",
-        "text": "Landing tomorrow before 10am PST together with a small ship.",
-        "at": "2026-10-23T04:47:34Z",
-        "url": "https://x.com/thsottiaux/status/2113492502355562875",
-        "parents": [
-          "2113492187770175603"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "timing"
-        ],
-        "summary": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。",
-        "timing": "原文 10am PST → 2026-10-24 02:00:00 北京时间（UTC+8）；按原文 PST（UTC-08:00）；tomorrow 按发帖时原文时区的日期解释"
-      }
+      "at": "2026-10-23T05:00:37Z",
+      "receipt": "1ddc606b420a430882cfba537065d0d5",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
