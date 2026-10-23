@@ -864,20 +864,17 @@
       "at": "2026-10-23T05:00:37Z",
       "receipt": "1ddc606b420a430882cfba537065d0d5",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "health:failure:2026-10-23T13:00:43Z": {
-      "type": "health",
-      "health_event": "failure",
       "at": "2026-10-23T13:30:34Z",
-      "title": "Tibo 监控数据源受阻",
-      "text": "已连续 3 轮无法获得可信数据：codex-reset.com 返回 HTTP 503。没有把读取失败当成没有新消息；后续继续重试。"
+      "receipt": "800feba3ff0741938f3c1b69211098ca",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 3,
-    "alerted": false,
+    "alerted": true,
     "last_success_day": "2026-10-23",
     "episode": "2026-10-23T13:00:43Z",
     "last_error": "codex-reset.com 返回 HTTP 503"
