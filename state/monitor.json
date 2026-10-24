@@ -896,6 +896,36 @@
           "2114031587549659162"
         ]
       }
+    },
+    "2114073762895405067": {
+      "fingerprint": "0df17557d90cc7235a609cd2",
+      "post": {
+        "id": "2114073762895405067",
+        "text": "@TokenGremlin Hi 👋",
+        "at": "2026-10-24T19:17:17Z",
+        "url": "https://x.com/thsottiaux/status/2114073762895405067",
+        "parents": []
+      }
+    },
+    "2114074317759938918": {
+      "fingerprint": "2588a3fd03323faf12b16225",
+      "post": {
+        "id": "2114074317759938918",
+        "text": "@can @OpenAIDevs No need for a bribe. What’s bothering you",
+        "at": "2026-10-24T19:19:29Z",
+        "url": "https://x.com/thsottiaux/status/2114074317759938918",
+        "parents": []
+      }
+    },
+    "2114074885622501706": {
+      "fingerprint": "966a515a90f5819d5806caab",
+      "post": {
+        "id": "2114074885622501706",
+        "text": "DM if you want to help scale dots to 1B users and have done similar things in the past",
+        "at": "2026-10-24T19:21:45Z",
+        "url": "https://x.com/thsottiaux/status/2114074885622501706",
+        "parents": []
+      }
     }
   },
   "accepted": {
