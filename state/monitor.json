@@ -956,6 +956,38 @@
         "url": "https://x.com/thsottiaux/status/2114125878804545940",
         "parents": []
       }
+    },
+    "2114199013176303641": {
+      "fingerprint": "9d08c983429b7fbada32015e",
+      "post": {
+        "id": "2114199013176303641",
+        "text": "@alexandr_wang Congrats, that’s not a butt",
+        "at": "2026-10-25T03:34:59Z",
+        "url": "https://x.com/thsottiaux/status/2114199013176303641",
+        "parents": []
+      }
+    },
+    "2114200152701575656": {
+      "fingerprint": "277ff96e92ca7d7dde0a0e88",
+      "post": {
+        "id": "2114200152701575656",
+        "text": "Day 20/ Rest and reset",
+        "at": "2026-10-25T03:39:31Z",
+        "url": "https://x.com/thsottiaux/status/2114200152701575656",
+        "parents": []
+      }
+    },
+    "2114200291319124163": {
+      "fingerprint": "7b56f5e80453d3c363626e25",
+      "post": {
+        "id": "2114200291319124163",
+        "text": "By midnight PST",
+        "at": "2026-10-25T03:40:04Z",
+        "url": "https://x.com/thsottiaux/status/2114200291319124163",
+        "parents": [
+          "2114200152701575656"
+        ]
+      }
     }
   },
   "accepted": {
@@ -1000,7 +1032,26 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2114200152701575656:9136eecbf5a34d98b9f7f17e": {
+      "type": "post",
+      "at": "2026-10-25T03:39:31Z",
+      "post": {
+        "id": "2114200152701575656",
+        "text": "Day 20/ Rest and reset",
+        "at": "2026-10-25T03:39:31Z",
+        "url": "https://x.com/thsottiaux/status/2114200152701575656",
+        "parents": []
+      },
+      "signal": {
+        "stages": [
+          "announcement"
+        ],
+        "summary": "Tibo 发布额度重置信号或预告，尚未确认执行。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
