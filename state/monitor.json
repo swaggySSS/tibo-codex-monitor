@@ -988,6 +988,30 @@
           "2114200152701575656"
         ]
       }
+    },
+    "2114228044072403055": {
+      "fingerprint": "bb72fe8749a4177b2a188fa9",
+      "post": {
+        "id": "2114228044072403055",
+        "text": "Not a real improvement, put the reset in the bag",
+        "at": "2026-10-25T05:30:20Z",
+        "url": "https://x.com/thsottiaux/status/2114228044072403055",
+        "parents": [
+          "2114219096128750008"
+        ]
+      }
+    },
+    "2114228445043691592": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8",
+      "post": {
+        "id": "2114228445043691592",
+        "text": "https://t.co/cjuGQnsUgA",
+        "at": "2026-10-25T05:31:56Z",
+        "url": "https://x.com/thsottiaux/status/2114228445043691592",
+        "parents": [
+          "2114204359919820920"
+        ]
+      }
     }
   },
   "accepted": {
@@ -1037,7 +1061,28 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2114228044072403055:339f6d8028dc2738b4c72a8a": {
+      "type": "post",
+      "at": "2026-10-25T05:30:20Z",
+      "post": {
+        "id": "2114228044072403055",
+        "text": "Not a real improvement, put the reset in the bag",
+        "at": "2026-10-25T05:30:20Z",
+        "url": "https://x.com/thsottiaux/status/2114228044072403055",
+        "parents": [
+          "2114219096128750008"
+        ]
+      },
+      "signal": {
+        "stages": [
+          "teaser"
+        ],
+        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
