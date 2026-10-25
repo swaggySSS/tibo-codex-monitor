@@ -1059,30 +1059,14 @@
       "at": "2026-10-25T03:45:23Z",
       "receipt": "92cabcba5adc41e6955f003452012030",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2114228044072403055:339f6d8028dc2738b4c72a8a": {
-      "type": "post",
-      "at": "2026-10-25T05:30:20Z",
-      "post": {
-        "id": "2114228044072403055",
-        "text": "Not a real improvement, put the reset in the bag",
-        "at": "2026-10-25T05:30:20Z",
-        "url": "https://x.com/thsottiaux/status/2114228044072403055",
-        "parents": [
-          "2114219096128750008"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "teaser"
-        ],
-        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-25T05:45:21Z",
+      "receipt": "07420f6fb9ce48688950dacf8c800a53",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
