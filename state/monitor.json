@@ -1030,28 +1030,14 @@
       "at": "2026-10-23T13:45:24Z",
       "receipt": "49d3374c4c2b4a3480eada5767e40129",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2114200152701575656:9136eecbf5a34d98b9f7f17e": {
-      "type": "post",
-      "at": "2026-10-25T03:39:31Z",
-      "post": {
-        "id": "2114200152701575656",
-        "text": "Day 20/ Rest and reset",
-        "at": "2026-10-25T03:39:31Z",
-        "url": "https://x.com/thsottiaux/status/2114200152701575656",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "announcement"
-        ],
-        "summary": "Tibo 发布额度重置信号或预告，尚未确认执行。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-25T03:45:23Z",
+      "receipt": "92cabcba5adc41e6955f003452012030",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
