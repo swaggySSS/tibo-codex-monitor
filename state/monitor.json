@@ -1181,30 +1181,14 @@
       "at": "2026-10-26T05:30:30Z",
       "receipt": "3982fb43c7b24662accfe5eaac6502cd",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2114599388454481930:9ec5236f4838709644b49788": {
-      "type": "post",
-      "at": "2026-10-26T06:05:56Z",
-      "post": {
-        "id": "2114599388454481930",
-        "text": "Not enough resets",
-        "at": "2026-10-26T06:05:56Z",
-        "url": "https://x.com/thsottiaux/status/2114599388454481930",
-        "parents": [
-          "2114462742757449730"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "teaser"
-        ],
-        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-26T06:15:23Z",
+      "receipt": "9109aab6f18d400ba277f6f86a264893",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
