@@ -1134,28 +1134,14 @@
       "at": "2026-10-25T05:45:21Z",
       "receipt": "07420f6fb9ce48688950dacf8c800a53",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2114588174249071102:1913070231f6c918b37e1369": {
-      "type": "post",
-      "at": "2026-10-26T05:21:22Z",
-      "post": {
-        "id": "2114588174249071102",
-        "text": "Day 21/ Wonder what happens the remaining seven days. But today is a reset.",
-        "at": "2026-10-26T05:21:22Z",
-        "url": "https://x.com/thsottiaux/status/2114588174249071102",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "timing"
-        ],
-        "summary": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。",
-        "timing": "原文 原文中的相对日期 → 北京时间（UTC+8）：无法唯一确定（未提供可唯一换算的时区和具体时刻）"
-      }
+      "at": "2026-10-26T05:30:30Z",
+      "receipt": "3982fb43c7b24662accfe5eaac6502cd",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
