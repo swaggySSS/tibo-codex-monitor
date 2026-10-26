@@ -1092,6 +1092,38 @@
         "url": "https://x.com/thsottiaux/status/2114595002210783279",
         "parents": []
       }
+    },
+    "2114598609245126731": {
+      "fingerprint": "1e38dc6fcc371784220fca56",
+      "post": {
+        "id": "2114598609245126731",
+        "text": "@bijanbowen 10/10 soothed",
+        "at": "2026-10-26T06:02:50Z",
+        "url": "https://x.com/thsottiaux/status/2114598609245126731",
+        "parents": []
+      }
+    },
+    "2114598675930296518": {
+      "fingerprint": "902ca9c7c7e94b3703050db7",
+      "post": {
+        "id": "2114598675930296518",
+        "text": "@Sisymiro Absolutely",
+        "at": "2026-10-26T06:03:06Z",
+        "url": "https://x.com/thsottiaux/status/2114598675930296518",
+        "parents": []
+      }
+    },
+    "2114599388454481930": {
+      "fingerprint": "1d076b0d0c3ad092f910d04c",
+      "post": {
+        "id": "2114599388454481930",
+        "text": "Not enough resets",
+        "at": "2026-10-26T06:05:56Z",
+        "url": "https://x.com/thsottiaux/status/2114599388454481930",
+        "parents": [
+          "2114462742757449730"
+        ]
+      }
     }
   },
   "accepted": {
@@ -1151,7 +1183,28 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2114599388454481930:9ec5236f4838709644b49788": {
+      "type": "post",
+      "at": "2026-10-26T06:05:56Z",
+      "post": {
+        "id": "2114599388454481930",
+        "text": "Not enough resets",
+        "at": "2026-10-26T06:05:56Z",
+        "url": "https://x.com/thsottiaux/status/2114599388454481930",
+        "parents": [
+          "2114462742757449730"
+        ]
+      },
+      "signal": {
+        "stages": [
+          "teaser"
+        ],
+        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
