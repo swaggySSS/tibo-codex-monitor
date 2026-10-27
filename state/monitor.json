@@ -1220,8 +1220,10 @@
   },
   "outbox": {},
   "health": {
-    "failures": 0,
+    "failures": 1,
     "alerted": false,
-    "last_success_day": "2026-10-27"
+    "last_success_day": "2026-10-27",
+    "episode": "2026-10-27T18:15:23Z",
+    "last_error": "codex-reset.com 未返回有效 JSON"
   }
 }
