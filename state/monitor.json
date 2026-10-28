@@ -1260,28 +1260,14 @@
       "at": "2026-10-26T06:15:23Z",
       "receipt": "9109aab6f18d400ba277f6f86a264893",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2115273064481218829:0a1db7d90531761eb19ea97b": {
-      "type": "post",
-      "at": "2026-10-28T02:42:53Z",
-      "post": {
-        "id": "2115273064481218829",
-        "text": "Day 23/ Much requested iCloud Main & Calendar plugins. Just kidding, today is a reset. Still much requested though! https://t.co/tHe09XkVXH",
-        "at": "2026-10-28T02:42:53Z",
-        "url": "https://x.com/thsottiaux/status/2115273064481218829",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "timing"
-        ],
-        "summary": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。",
-        "timing": "原文 原文中的相对日期 → 北京时间（UTC+8）：无法唯一确定（未提供可唯一换算的时区和具体时刻）"
-      }
+      "at": "2026-10-28T03:00:41Z",
+      "receipt": "f01b87130a3b4e5b90a2b4acd41009b7",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
