@@ -1198,6 +1198,38 @@
           "2115273064481218829"
         ]
       }
+    },
+    "2115289940233961584": {
+      "fingerprint": "939478201bc37365725dfd74",
+      "post": {
+        "id": "2115289940233961584",
+        "text": "@TokenGremlin @poteto lend me some of your strength, there is still time",
+        "at": "2026-10-28T03:49:56Z",
+        "url": "https://x.com/thsottiaux/status/2115289940233961584",
+        "parents": []
+      }
+    },
+    "2115290111147712544": {
+      "fingerprint": "726cb15b149b39bf87dcf976",
+      "post": {
+        "id": "2115290111147712544",
+        "text": "@matteing Hi Sergio",
+        "at": "2026-10-28T03:50:37Z",
+        "url": "https://x.com/thsottiaux/status/2115290111147712544",
+        "parents": []
+      }
+    },
+    "2115290318652444729": {
+      "fingerprint": "f884e466a238ad9c149bf3fc",
+      "post": {
+        "id": "2115290318652444729",
+        "text": "Maybe it’s because I have bad long term memory.",
+        "at": "2026-10-28T03:51:26Z",
+        "url": "https://x.com/thsottiaux/status/2115290318652444729",
+        "parents": [
+          "2115090264138395670"
+        ]
+      }
     }
   },
   "accepted": {
