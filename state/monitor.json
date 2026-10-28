@@ -1230,6 +1230,26 @@
           "2115090264138395670"
         ]
       }
+    },
+    "2115297093879472332": {
+      "fingerprint": "d20dfd0d1ca8a7db1a0fd59c",
+      "post": {
+        "id": "2115297093879472332",
+        "text": "https://t.co/Fgy0dBAHsJ has landed",
+        "at": "2026-10-28T04:18:22Z",
+        "url": "https://x.com/thsottiaux/status/2115297093879472332",
+        "parents": []
+      }
+    },
+    "2115299029294920189": {
+      "fingerprint": "eff3116633806d32577695f3",
+      "post": {
+        "id": "2115299029294920189",
+        "text": "@mark_k @OpenAI Taking notes",
+        "at": "2026-10-28T04:26:03Z",
+        "url": "https://x.com/thsottiaux/status/2115299029294920189",
+        "parents": []
+      }
     }
   },
   "accepted": {
