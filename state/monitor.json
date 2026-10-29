@@ -1370,6 +1370,28 @@
         "url": "https://x.com/thsottiaux/status/2115850175868727621",
         "parents": []
       }
+    },
+    "2115851621137784832": {
+      "fingerprint": "cf8139c9774234bb9075316d",
+      "post": {
+        "id": "2115851621137784832",
+        "text": "Graduating from The Reset Company to The Token Company.",
+        "at": "2026-10-29T17:01:51Z",
+        "url": "https://x.com/thsottiaux/status/2115851621137784832",
+        "parents": [
+          "2115850175868727621"
+        ]
+      }
+    },
+    "2115851811576053881": {
+      "fingerprint": "7fb9b71930756b52ee604221",
+      "post": {
+        "id": "2115851811576053881",
+        "text": "@StefanoGPT Yes",
+        "at": "2026-10-29T17:02:37Z",
+        "url": "https://x.com/thsottiaux/status/2115851811576053881",
+        "parents": []
+      }
     }
   },
   "accepted": {
@@ -1439,7 +1461,28 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2115851621137784832:b448c46c65ca84d49ac5afc6": {
+      "type": "post",
+      "at": "2026-10-29T17:01:51Z",
+      "post": {
+        "id": "2115851621137784832",
+        "text": "Graduating from The Reset Company to The Token Company.",
+        "at": "2026-10-29T17:01:51Z",
+        "url": "https://x.com/thsottiaux/status/2115851621137784832",
+        "parents": [
+          "2115850175868727621"
+        ]
+      },
+      "signal": {
+        "stages": [
+          "teaser"
+        ],
+        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
