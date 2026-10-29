@@ -1459,30 +1459,14 @@
       "at": "2026-10-28T03:00:41Z",
       "receipt": "f01b87130a3b4e5b90a2b4acd41009b7",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2115851621137784832:b448c46c65ca84d49ac5afc6": {
-      "type": "post",
-      "at": "2026-10-29T17:01:51Z",
-      "post": {
-        "id": "2115851621137784832",
-        "text": "Graduating from The Reset Company to The Token Company.",
-        "at": "2026-10-29T17:01:51Z",
-        "url": "https://x.com/thsottiaux/status/2115851621137784832",
-        "parents": [
-          "2115850175868727621"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "teaser"
-        ],
-        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-29T17:15:25Z",
+      "receipt": "090f9a52146046d89bfa6c18dc65cba1",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
