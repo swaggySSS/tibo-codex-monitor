@@ -1538,30 +1538,14 @@
       "at": "2026-10-29T17:15:25Z",
       "receipt": "090f9a52146046d89bfa6c18dc65cba1",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2116256600436641887:a8c24fb869a57d72939578de": {
-      "type": "post",
-      "at": "2026-10-30T19:51:06Z",
-      "post": {
-        "id": "2116256600436641887",
-        "text": "Better announce 28 days of reset",
-        "at": "2026-10-30T19:51:06Z",
-        "url": "https://x.com/thsottiaux/status/2116256600436641887",
-        "parents": [
-          "2116220869479428500"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "teaser"
-        ],
-        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-10-30T20:00:36Z",
+      "receipt": "dea215a2be544ea19142ca70af993b5d",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
