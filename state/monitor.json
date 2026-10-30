@@ -1412,6 +1412,38 @@
         "url": "https://x.com/thsottiaux/status/2115974268936712436",
         "parents": []
       }
+    },
+    "2116044153515815186": {
+      "fingerprint": "c78a93b05720123af18c81e5",
+      "post": {
+        "id": "2116044153515815186",
+        "text": "@janus_of_DC Hi brother 👋",
+        "at": "2026-10-30T05:46:55Z",
+        "url": "https://x.com/thsottiaux/status/2116044153515815186",
+        "parents": []
+      }
+    },
+    "2116045727642366367": {
+      "fingerprint": "e20ebca5b06d85dc39fcb2ee",
+      "post": {
+        "id": "2116045727642366367",
+        "text": "Good list",
+        "at": "2026-10-30T05:53:10Z",
+        "url": "https://x.com/thsottiaux/status/2116045727642366367",
+        "parents": [
+          "2115845891953213919"
+        ]
+      }
+    },
+    "2116046569963421719": {
+      "fingerprint": "12bb7b48ebb129886aef362d",
+      "post": {
+        "id": "2116046569963421719",
+        "text": "@Ananth7e Yep",
+        "at": "2026-10-30T05:56:31Z",
+        "url": "https://x.com/thsottiaux/status/2116046569963421719",
+        "parents": []
+      }
     }
   },
   "accepted": {
