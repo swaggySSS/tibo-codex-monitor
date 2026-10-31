@@ -1476,6 +1476,16 @@
         "url": "https://x.com/thsottiaux/status/2116346061317140873",
         "parents": []
       }
+    },
+    "2116405414921384099": {
+      "fingerprint": "97f0ae5a30c1d5bc536cabd1",
+      "post": {
+        "id": "2116405414921384099",
+        "text": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
+        "at": "2026-10-31T05:42:26Z",
+        "url": "https://x.com/thsottiaux/status/2116405414921384099",
+        "parents": []
+      }
     }
   },
   "accepted": {
@@ -1555,7 +1565,26 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2116405414921384099:977c6ae61f62b473f4dbae9c": {
+      "type": "post",
+      "at": "2026-10-31T05:42:26Z",
+      "post": {
+        "id": "2116405414921384099",
+        "text": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
+        "at": "2026-10-31T05:42:26Z",
+        "url": "https://x.com/thsottiaux/status/2116405414921384099",
+        "parents": []
+      },
+      "signal": {
+        "stages": [
+          "banked"
+        ],
+        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
+        "timing": "原文 Next two days → 2026-10-31 13:42:26 北京时间（UTC+8） 至 2026-11-02 13:42:26 北京时间（UTC+8）（按推文发布时间换算，仍为预计）"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
