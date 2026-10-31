@@ -1563,28 +1563,14 @@
       "at": "2026-10-30T20:00:36Z",
       "receipt": "dea215a2be544ea19142ca70af993b5d",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2116405414921384099:977c6ae61f62b473f4dbae9c": {
-      "type": "post",
-      "at": "2026-10-31T05:42:26Z",
-      "post": {
-        "id": "2116405414921384099",
-        "text": "Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too. Next two days will be resets… banked… do with this what you may 👀.\n\nhttps://t.co/iQxsqbuk0f",
-        "at": "2026-10-31T05:42:26Z",
-        "url": "https://x.com/thsottiaux/status/2116405414921384099",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "原文 Next two days → 2026-10-31 13:42:26 北京时间（UTC+8） 至 2026-11-02 13:42:26 北京时间（UTC+8）（按推文发布时间换算，仍为预计）"
-      }
+      "at": "2026-10-31T05:45:23Z",
+      "receipt": "c40fd207b02443d998c4a0c8f3ec526e",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
