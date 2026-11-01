@@ -1670,30 +1670,14 @@
       "at": "2026-10-31T05:45:23Z",
       "receipt": "c40fd207b02443d998c4a0c8f3ec526e",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2116942192497533418:7f2728d17cd85f928be5f70f": {
-      "type": "post",
-      "at": "2026-11-01T17:15:24Z",
-      "post": {
-        "id": "2116942192497533418",
-        "text": "I demand a banked reset",
-        "at": "2026-11-01T17:15:24Z",
-        "url": "https://x.com/thsottiaux/status/2116942192497533418",
-        "parents": [
-          "2116820985873571993"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-01T17:30:32Z",
+      "receipt": "2c9bddb95a4d460ea22cb5fbf6732182",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
