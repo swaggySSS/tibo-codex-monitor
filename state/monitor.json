@@ -1576,6 +1576,18 @@
         "url": "https://x.com/thsottiaux/status/2116936205623611781",
         "parents": []
       }
+    },
+    "2116942192497533418": {
+      "fingerprint": "408a601148e9dc7536ac1335",
+      "post": {
+        "id": "2116942192497533418",
+        "text": "I demand a banked reset",
+        "at": "2026-11-01T17:15:24Z",
+        "url": "https://x.com/thsottiaux/status/2116942192497533418",
+        "parents": [
+          "2116820985873571993"
+        ]
+      }
     }
   },
   "accepted": {
@@ -1660,7 +1672,28 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2116942192497533418:7f2728d17cd85f928be5f70f": {
+      "type": "post",
+      "at": "2026-11-01T17:15:24Z",
+      "post": {
+        "id": "2116942192497533418",
+        "text": "I demand a banked reset",
+        "at": "2026-11-01T17:15:24Z",
+        "url": "https://x.com/thsottiaux/status/2116942192497533418",
+        "parents": [
+          "2116820985873571993"
+        ]
+      },
+      "signal": {
+        "stages": [
+          "banked"
+        ],
+        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
