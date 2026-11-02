@@ -1628,6 +1628,28 @@
         "url": "https://x.com/thsottiaux/status/2117151862705230048",
         "parents": []
       }
+    },
+    "2117283124833055196": {
+      "fingerprint": "58127adb52185a36cd361b76",
+      "post": {
+        "id": "2117283124833055196",
+        "text": "Fellow resetters, heads up that we're working on expanding the family of frontier models that power dots, including GPT-6 Astra and GPT-6.1 Terra and some others in the future. Terra brings speed and a nice personality upgrade, and will help us bring dots to more people.",
+        "at": "2026-11-02T15:50:08Z",
+        "url": "https://x.com/thsottiaux/status/2117283124833055196",
+        "parents": []
+      }
+    },
+    "2117283355427495983": {
+      "fingerprint": "a4c03068c54d055b88e417c8",
+      "post": {
+        "id": "2117283355427495983",
+        "text": "Your dot will choose the best model for the task, drawing on different models for different parts of the work.",
+        "at": "2026-11-02T15:51:03Z",
+        "url": "https://x.com/thsottiaux/status/2117283355427495983",
+        "parents": [
+          "2117283124833055196"
+        ]
+      }
     }
   },
   "accepted": {
