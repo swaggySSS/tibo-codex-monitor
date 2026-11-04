@@ -1768,6 +1768,38 @@
         "url": "https://x.com/thsottiaux/status/2117889346426823037",
         "parents": []
       }
+    },
+    "2118024169762029594": {
+      "fingerprint": "83f501d8f8259a9b08c088d2",
+      "post": {
+        "id": "2118024169762029594",
+        "text": "Computers have RAM, right? \n\nWelcome Pierre. Let’s reinvent everything https://t.co/fWqSKZMspE",
+        "at": "2026-11-04T16:54:47Z",
+        "url": "https://x.com/thsottiaux/status/2118024169762029594",
+        "parents": []
+      }
+    },
+    "2118024484594803084": {
+      "fingerprint": "18a39af24a70bbc4cb888e40",
+      "post": {
+        "id": "2118024484594803084",
+        "text": "@theo Which team were you on?",
+        "at": "2026-11-04T16:56:02Z",
+        "url": "https://x.com/thsottiaux/status/2118024484594803084",
+        "parents": []
+      }
+    },
+    "2118024737070957009": {
+      "fingerprint": "ad2cbeeb6588f69d7531142c",
+      "post": {
+        "id": "2118024737070957009",
+        "text": "I was moved to the basement yesterday",
+        "at": "2026-11-04T16:57:02Z",
+        "url": "https://x.com/thsottiaux/status/2118024737070957009",
+        "parents": [
+          "2117923208934679021"
+        ]
+      }
     }
   },
   "accepted": {
