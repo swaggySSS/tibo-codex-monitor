@@ -3,30 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2107586622766366739": {
-      "fingerprint": "b14530c23fcc4198b83fcee6",
-      "post": {
-        "id": "2107586622766366739",
-        "text": "The math doesn’t math, but the rules are the rules",
-        "at": "2026-10-06T21:39:42Z",
-        "url": "https://x.com/thsottiaux/status/2107586622766366739",
-        "parents": [
-          "2107581475755589952"
-        ]
-      }
-    },
-    "2107587334661378382": {
-      "fingerprint": "43e3c6be60a16b69ff404bb7",
-      "post": {
-        "id": "2107587334661378382",
-        "text": "Feels right, but such is the game",
-        "at": "2026-10-06T21:42:32Z",
-        "url": "https://x.com/thsottiaux/status/2107587334661378382",
-        "parents": [
-          "2107586415953391622"
-        ]
-      }
-    },
     "2107592271952748814": {
       "fingerprint": "cc105719a1f7ae0e7a600b7f",
       "post": {
