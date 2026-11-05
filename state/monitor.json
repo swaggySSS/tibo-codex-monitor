@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2107575657014468879": {
-      "fingerprint": "c8fd74975a01c44459f43fdf",
-      "post": {
-        "id": "2107575657014468879",
-        "text": "Roundup of Day 2/\n\n2.1/ Approve for me (auto-review) is now included and does not use usage. Can be between 2-10% of plan when used. Also better for you.\n2.2/ Simplified API for builders.\n2.3/ Meeting notes integrated.\n2.4/ Decisions API live for builders. Will use in the app to improve the experience.",
-        "at": "2026-10-06T20:56:08Z",
-        "url": "https://x.com/thsottiaux/status/2107575657014468879",
-        "parents": []
-      }
-    },
     "2107577536779870210": {
       "fingerprint": "406b5be2200f3dfd6f101f97",
       "post": {
@@ -1960,6 +1950,16 @@
         "text": "@kimmonismus Don't know, I live in the basement now",
         "at": "2026-11-05T20:41:20Z",
         "url": "https://x.com/thsottiaux/status/2118443570298568886",
+        "parents": []
+      }
+    },
+    "2118444105969926407": {
+      "fingerprint": "e1bafe2e9f71ea0f55f62699",
+      "post": {
+        "id": "2118444105969926407",
+        "text": "Come push the frontier of fluffiness https://t.co/Iq1colT66z",
+        "at": "2026-11-05T20:43:28Z",
+        "url": "https://x.com/thsottiaux/status/2118444105969926407",
         "parents": []
       }
     }
