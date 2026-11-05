@@ -3,40 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2107577536779870210": {
-      "fingerprint": "406b5be2200f3dfd6f101f97",
-      "post": {
-        "id": "2107577536779870210",
-        "text": "I do like giving resets",
-        "at": "2026-10-06T21:03:36Z",
-        "url": "https://x.com/thsottiaux/status/2107577536779870210",
-        "parents": [
-          "2107574802534052325"
-        ]
-      }
-    },
-    "2107578625419866469": {
-      "fingerprint": "318d84cd9eb601ddf53253d9",
-      "post": {
-        "id": "2107578625419866469",
-        "text": "Four updates or a reset. Or both. How was day 2. https://t.co/s8HNYAaVjH",
-        "at": "2026-10-06T21:07:55Z",
-        "url": "https://x.com/thsottiaux/status/2107578625419866469",
-        "parents": []
-      }
-    },
-    "2107579151322591412": {
-      "fingerprint": "6ca8126ca09fd359e9946b91",
-      "post": {
-        "id": "2107579151322591412",
-        "text": "OK fake tibo",
-        "at": "2026-10-06T21:10:01Z",
-        "url": "https://x.com/thsottiaux/status/2107579151322591412",
-        "parents": [
-          "2107577110311362866"
-        ]
-      }
-    },
     "2107586622766366739": {
       "fingerprint": "b14530c23fcc4198b83fcee6",
       "post": {
