@@ -3,30 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2107592271952748814": {
-      "fingerprint": "cc105719a1f7ae0e7a600b7f",
-      "post": {
-        "id": "2107592271952748814",
-        "text": "Is this how the internet works 👀",
-        "at": "2026-10-06T22:02:09Z",
-        "url": "https://x.com/thsottiaux/status/2107592271952748814",
-        "parents": [
-          "2107583320569819588"
-        ]
-      }
-    },
-    "2107592473048715573": {
-      "fingerprint": "9a21dc2d6bebe999915106e9",
-      "post": {
-        "id": "2107592473048715573",
-        "text": "I accept your vote",
-        "at": "2026-10-06T22:02:57Z",
-        "url": "https://x.com/thsottiaux/status/2107592473048715573",
-        "parents": [
-          "2107558459713425516"
-        ]
-      }
-    },
     "2107676072871600470": {
       "fingerprint": "6110dc3f1d9834fa8220e4c3",
       "post": {
