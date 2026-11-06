@@ -3,40 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2107676072871600470": {
-      "fingerprint": "6110dc3f1d9834fa8220e4c3",
-      "post": {
-        "id": "2107676072871600470",
-        "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
-        "at": "2026-10-07T03:35:09Z",
-        "url": "https://x.com/thsottiaux/status/2107676072871600470",
-        "parents": []
-      }
-    },
-    "2107676261099426030": {
-      "fingerprint": "15c9fe9e2818addbd7f8fffc",
-      "post": {
-        "id": "2107676261099426030",
-        "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
-        "at": "2026-10-07T03:35:54Z",
-        "url": "https://x.com/thsottiaux/status/2107676261099426030",
-        "parents": [
-          "2107676072871600470"
-        ]
-      }
-    },
-    "2107676653895967106": {
-      "fingerprint": "98fcb203400fe661d0407d7b",
-      "post": {
-        "id": "2107676653895967106",
-        "text": "Also! Good evening!!",
-        "at": "2026-10-07T03:37:27Z",
-        "url": "https://x.com/thsottiaux/status/2107676653895967106",
-        "parents": [
-          "2107676072871600470"
-        ]
-      }
-    },
     "2107913674593644711": {
       "fingerprint": "70b03c5e7a386674db3f4459",
       "post": {
