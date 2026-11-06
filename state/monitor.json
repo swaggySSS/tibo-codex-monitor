@@ -1906,6 +1906,46 @@
         "url": "https://x.com/thsottiaux/status/2118567894309306654",
         "parents": []
       }
+    },
+    "2118569235953893573": {
+      "fingerprint": "8ea82eecab57aa20a09328ad",
+      "post": {
+        "id": "2118569235953893573",
+        "text": "I can confidently say that humans were not very good at writing secure infrastructure. The endstate will be hypersecure infrastructure and software for all, but we're going to go through some turbulence before we reach that.",
+        "at": "2026-11-06T05:00:41Z",
+        "url": "https://x.com/thsottiaux/status/2118569235953893573",
+        "parents": []
+      }
+    },
+    "2118569441860723112": {
+      "fingerprint": "bf746ca7fe7f4f6925931a1d",
+      "post": {
+        "id": "2118569441860723112",
+        "text": "Formal proofs of tens of millions of lines of code are not a ridiculous thing anymore and within the realm of what should be considered when designing new systems.",
+        "at": "2026-11-06T05:01:30Z",
+        "url": "https://x.com/thsottiaux/status/2118569441860723112",
+        "parents": []
+      }
+    },
+    "2118569868278796680": {
+      "fingerprint": "d2732a817038d51b11bccc5a",
+      "post": {
+        "id": "2118569868278796680",
+        "text": "@Sergey_Rura There is no going back. Software is changed forever.",
+        "at": "2026-11-06T05:03:12Z",
+        "url": "https://x.com/thsottiaux/status/2118569868278796680",
+        "parents": []
+      }
+    },
+    "2118572184679710964": {
+      "fingerprint": "6f8eb9d3b98287958de48c0c",
+      "post": {
+        "id": "2118572184679710964",
+        "text": "@ajambrosino @pablostanley Feedback is a gift",
+        "at": "2026-11-06T05:12:24Z",
+        "url": "https://x.com/thsottiaux/status/2118572184679710964",
+        "parents": []
+      }
     }
   },
   "accepted": {
