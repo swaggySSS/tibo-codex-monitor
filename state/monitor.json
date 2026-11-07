@@ -1974,6 +1974,18 @@
         "url": "https://x.com/thsottiaux/status/2118927736031047850",
         "parents": []
       }
+    },
+    "2118931941907165401": {
+      "fingerprint": "9a1938e46d23d49444442f07",
+      "post": {
+        "id": "2118931941907165401",
+        "text": "Savage, John",
+        "at": "2026-11-07T05:01:57Z",
+        "url": "https://x.com/thsottiaux/status/2118931941907165401",
+        "parents": [
+          "2118745235983638810"
+        ]
+      }
     }
   },
   "accepted": {
