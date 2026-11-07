@@ -2086,6 +2086,28 @@
         "url": "https://x.com/thsottiaux/status/2118953661820977315",
         "parents": []
       }
+    },
+    "2119113859747426370": {
+      "fingerprint": "2fc3f506b6ed4201ceb0a486",
+      "post": {
+        "id": "2119113859747426370",
+        "text": "Missed that you can dash",
+        "at": "2026-11-07T17:04:50Z",
+        "url": "https://x.com/thsottiaux/status/2119113859747426370",
+        "parents": [
+          "2118989680381395314"
+        ]
+      }
+    },
+    "2119113983118672370": {
+      "fingerprint": "644318e90da00d568211ab6d",
+      "post": {
+        "id": "2119113983118672370",
+        "text": "@rezoundous Nothing much",
+        "at": "2026-11-07T17:05:19Z",
+        "url": "https://x.com/thsottiaux/status/2119113983118672370",
+        "parents": []
+      }
     }
   },
   "accepted": {
