@@ -2138,6 +2138,18 @@
         "url": "https://x.com/thsottiaux/status/2119211022410228094",
         "parents": []
       }
+    },
+    "2119232059537514598": {
+      "fingerprint": "bc71f9ef2e35495e6d6cd150",
+      "post": {
+        "id": "2119232059537514598",
+        "text": "We doubled the usage on Pro plans and Business 100",
+        "at": "2026-11-08T00:54:31Z",
+        "url": "https://x.com/thsottiaux/status/2119232059537514598",
+        "parents": [
+          "2119150004426428901"
+        ]
+      }
     }
   },
   "accepted": {
