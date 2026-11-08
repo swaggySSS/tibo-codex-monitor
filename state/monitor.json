@@ -2339,30 +2339,14 @@
       "at": "2026-11-01T17:30:32Z",
       "receipt": "2c9bddb95a4d460ea22cb5fbf6732182",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2119308687676432672:7de7f518323ee7b219f5ba35": {
-      "type": "post",
-      "at": "2026-11-08T05:59:00Z",
-      "post": {
-        "id": "2119308687676432672",
-        "text": "We hesitated to embed https://t.co/TnRNoyTR5X into the codex app to make sense of the resets, but decided against it.",
-        "at": "2026-11-08T05:59:00Z",
-        "url": "https://x.com/thsottiaux/status/2119308687676432672",
-        "parents": [
-          "2119185994326905218"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "teaser"
-        ],
-        "summary": "Tibo 提及额度重置，目前仅作为相关讨论或意向。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-08T06:15:23Z",
+      "receipt": "4a5da25ac5fa4fb78a6654245f4b9a83",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
