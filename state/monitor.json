@@ -3,18 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2108778939057664357": {
-      "fingerprint": "265f15a9aa0b5b03ef6cb159",
-      "post": {
-        "id": "2108778939057664357",
-        "text": "@rohit3a Folks. Why do you think we picked 300k for context length for Codex. \n\nWe ran the numbers and it’s better. We can run it at 1M too but it would just cost more of the usage. Good defaults are important.",
-        "at": "2026-10-10T04:37:32Z",
-        "url": "https://x.com/thsottiaux/status/2108778939057664357",
-        "parents": [
-          "2108277836285161798"
-        ]
-      }
-    },
     "2109045220411351517": {
       "fingerprint": "0de146a5b67470b4272b1362",
       "post": {
