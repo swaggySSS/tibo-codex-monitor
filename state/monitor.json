@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2109045220411351517": {
-      "fingerprint": "0de146a5b67470b4272b1362",
-      "post": {
-        "id": "2109045220411351517",
-        "text": "Day 6/ Reset",
-        "at": "2026-10-10T22:15:39Z",
-        "url": "https://x.com/thsottiaux/status/2109045220411351517",
-        "parents": []
-      }
-    },
-    "2109045392684032299": {
-      "fingerprint": "680ade00127d5ad71d09d8d1",
-      "post": {
-        "id": "2109045392684032299",
-        "text": "Global reset by EOD. May the tokens do good things for you.",
-        "at": "2026-10-10T22:16:20Z",
-        "url": "https://x.com/thsottiaux/status/2109045392684032299",
-        "parents": [
-          "2109045220411351517"
-        ]
-      }
-    },
     "2109090080497508356": {
       "fingerprint": "e15a9b240c1657e9b84ba8a3",
       "post": {
