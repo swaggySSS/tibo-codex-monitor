@@ -3,18 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2109430894604026039": {
-      "fingerprint": "ec6f2edd8f935d40c18dd351",
-      "post": {
-        "id": "2109430894604026039",
-        "text": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
-        "at": "2026-10-11T23:48:11Z",
-        "url": "https://x.com/thsottiaux/status/2109430894604026039",
-        "parents": [
-          "2109430343346581527"
-        ]
-      }
-    },
     "2109438305188327838": {
       "fingerprint": "d1b957aa4fa4539c0c0bd5c8",
       "post": {
@@ -2268,6 +2256,16 @@
         "url": "https://x.com/thsottiaux/status/2120267636516995218",
         "parents": []
       }
+    },
+    "2120304649807020238": {
+      "fingerprint": "3b5a6007dc1ac177c9bfee6b",
+      "post": {
+        "id": "2120304649807020238",
+        "text": "@embw_l0x We're assembling one of the best teams ever and I do talk to folks at Anthropic every once in a while. Couldn't be more excited for the months ahead.",
+        "at": "2026-11-10T23:56:36Z",
+        "url": "https://x.com/thsottiaux/status/2120304649807020238",
+        "parents": []
+      }
     }
   },
   "accepted": {
@@ -2366,6 +2364,6 @@
   "health": {
     "failures": 0,
     "alerted": false,
-    "last_success_day": "2026-11-10"
+    "last_success_day": "2026-11-11"
   }
 }
