@@ -2244,6 +2244,16 @@
         "url": "https://x.com/thsottiaux/status/2120304649807020238",
         "parents": []
       }
+    },
+    "2120410006273380750": {
+      "fingerprint": "2671fb850e9fc24d1d98611b",
+      "post": {
+        "id": "2120410006273380750",
+        "text": "It’s been a while without resets. Maybe I should come back out of the basement",
+        "at": "2026-11-11T06:55:15Z",
+        "url": "https://x.com/thsottiaux/status/2120410006273380750",
+        "parents": []
+      }
     }
   },
   "accepted": {
@@ -2338,7 +2348,26 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2120410006273380750:f1210c5e29fcfdedfbc0f5c4": {
+      "type": "post",
+      "at": "2026-11-11T06:55:15Z",
+      "post": {
+        "id": "2120410006273380750",
+        "text": "It’s been a while without resets. Maybe I should come back out of the basement",
+        "at": "2026-11-11T06:55:15Z",
+        "url": "https://x.com/thsottiaux/status/2120410006273380750",
+        "parents": []
+      },
+      "signal": {
+        "stages": [
+          "announcement"
+        ],
+        "summary": "Tibo 发布额度重置信号或预告，尚未确认执行。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
