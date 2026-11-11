@@ -2373,30 +2373,14 @@
       "at": "2026-11-11T07:00:40Z",
       "receipt": "fee0891d39da41c6adcc09ee8d140b6e",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2120410480204525936:1c43b009b11d1d1a4a945419": {
-      "type": "post",
-      "at": "2026-11-11T06:57:08Z",
-      "post": {
-        "id": "2120410480204525936",
-        "text": "Thursday is feeling codexy to me. Perhaps also a good time for a banked reset.",
-        "at": "2026-11-11T06:57:08Z",
-        "url": "https://x.com/thsottiaux/status/2120410480204525936",
-        "parents": [
-          "2120410006273380750"
-        ]
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-11T07:15:24Z",
+      "receipt": "625d508b1f0e4d68bbce277a45c1c2d1",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
