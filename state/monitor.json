@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2109812216212099456": {
-      "fingerprint": "5899ec85170b3df237ebf634",
-      "post": {
-        "id": "2109812216212099456",
-        "text": "Day 8/ Reset",
-        "at": "2026-10-13T01:03:25Z",
-        "url": "https://x.com/thsottiaux/status/2109812216212099456",
-        "parents": []
-      }
-    },
-    "2109812360596865224": {
-      "fingerprint": "44e69cdab67611094078bd0e",
-      "post": {
-        "id": "2109812360596865224",
-        "text": "Global reset landing by EOD PST time. Enjoy",
-        "at": "2026-10-13T01:03:59Z",
-        "url": "https://x.com/thsottiaux/status/2109812360596865224",
-        "parents": [
-          "2109812216212099456"
-        ]
-      }
-    },
     "2109873287853707513": {
       "fingerprint": "89b58b270759c2e890657fd2",
       "post": {
