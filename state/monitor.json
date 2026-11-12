@@ -2344,29 +2344,14 @@
       "at": "2026-11-11T07:15:24Z",
       "receipt": "625d508b1f0e4d68bbce277a45c1c2d1",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2120999993079451919:a954d0ea53dfe1b707c7e67e": {
-      "type": "post",
-      "at": "2026-11-12T21:59:39Z",
-      "post": {
-        "id": "2120999993079451919",
-        "text": "We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon! https://t.co/Y7Mnp6Cuu1",
-        "at": "2026-11-12T21:59:39Z",
-        "url": "https://x.com/thsottiaux/status/2120999993079451919",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "timing",
-          "banked"
-        ],
-        "summary": "Tibo 提供了预计执行时间，时间过去并不自动代表已完成。 原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "原文 原文中的相对日期 → 北京时间（UTC+8）：无法唯一确定（未提供可唯一换算的时区和具体时刻）"
-      }
+      "at": "2026-11-12T22:15:26Z",
+      "receipt": "48db4d536d1e419984715de68453a316",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
