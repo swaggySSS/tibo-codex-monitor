@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2110595484180214059": {
-      "fingerprint": "9b40e3d87d3c15e5dd484b84",
-      "post": {
-        "id": "2110595484180214059",
-        "text": "The reports of my reset button being lost are greatly exaggerated\n\nDay 10/ Reset",
-        "at": "2026-10-15T04:55:51Z",
-        "url": "https://x.com/thsottiaux/status/2110595484180214059",
-        "parents": []
-      }
-    },
-    "2110595554036400151": {
-      "fingerprint": "eba0790c03bbaf3aa21e73c9",
-      "post": {
-        "id": "2110595554036400151",
-        "text": "Landing within the next 2 hours",
-        "at": "2026-10-15T04:56:07Z",
-        "url": "https://x.com/thsottiaux/status/2110595554036400151",
-        "parents": [
-          "2110595484180214059"
-        ]
-      }
-    },
     "2110750421367287996": {
       "fingerprint": "de1a8ba273787634c37e7d66",
       "post": {
