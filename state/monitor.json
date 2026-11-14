@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2110750421367287996": {
-      "fingerprint": "de1a8ba273787634c37e7d66",
-      "post": {
-        "id": "2110750421367287996",
-        "text": "Day 11/\n\nWe've landed a series of changes and more compute to very significantly decrease the occurrence of the disruptive \"Selected model is at capacity. Please try a different model\". When it does happen, it should also eventually just continue by itself and not just block on it.\n\nLet us know if you still see it out there in the wild and we'll take a look.",
-        "at": "2026-10-15T15:11:30Z",
-        "url": "https://x.com/thsottiaux/status/2110750421367287996",
-        "parents": []
-      }
-    },
     "2110951585983631505": {
       "fingerprint": "02e58ceb36719257c8af2491",
       "post": {
