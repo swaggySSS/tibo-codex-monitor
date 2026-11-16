@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2111244596131111253": {
-      "fingerprint": "28d64bb1a56dec4fe7329830",
-      "post": {
-        "id": "2111244596131111253",
-        "text": "Day 12/\n\nWe’ve made improvements to Codex & Work that increase the effective usage you get. We achieved this by reusing context across subagents, keeping context cached longer, and improved request routing that allows us to increase cache hits.",
-        "at": "2026-10-16T23:55:11Z",
-        "url": "https://x.com/thsottiaux/status/2111244596131111253",
-        "parents": []
-      }
-    },
     "2111492673890824348": {
       "fingerprint": "3f3194a28be3be998eb275ec",
       "post": {
@@ -2371,6 +2361,6 @@
   "health": {
     "failures": 0,
     "alerted": false,
-    "last_success_day": "2026-11-15"
+    "last_success_day": "2026-11-16"
   }
 }
