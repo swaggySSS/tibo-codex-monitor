@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2111492673890824348": {
-      "fingerprint": "3f3194a28be3be998eb275ec",
-      "post": {
-        "id": "2111492673890824348",
-        "text": "Day 13/ Le limit reset https://t.co/zXd2DIH5xf",
-        "at": "2026-10-17T16:20:57Z",
-        "url": "https://x.com/thsottiaux/status/2111492673890824348",
-        "parents": []
-      }
-    },
-    "2111492738025959922": {
-      "fingerprint": "8ad56d908dab326635397b6f",
-      "post": {
-        "id": "2111492738025959922",
-        "text": "Landing sometime today by EOD PST",
-        "at": "2026-10-17T16:21:13Z",
-        "url": "https://x.com/thsottiaux/status/2111492738025959922",
-        "parents": [
-          "2111492673890824348"
-        ]
-      }
-    },
     "2111523462372372942": {
       "fingerprint": "d7a1ee43dbad724f5e458cdf",
       "post": {
