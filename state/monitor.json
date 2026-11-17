@@ -2174,6 +2174,28 @@
         "url": "https://x.com/thsottiaux/status/2122534533216268747",
         "parents": []
       }
+    },
+    "2122753991000133943": {
+      "fingerprint": "6b4e31738c7049527b8cbcca",
+      "post": {
+        "id": "2122753991000133943",
+        "text": "GPT-6.2 Sol & Astra are *finally* here. We've also expanded ultrafast to Pro 200 plans for GPT-6.2 Sol, it's my go-to model for most day to day things. https://t.co/niwTIAgvab",
+        "at": "2026-11-17T18:09:24Z",
+        "url": "https://x.com/thsottiaux/status/2122753991000133943",
+        "parents": []
+      }
+    },
+    "2122754551187132438": {
+      "fingerprint": "ec7303235a2766fbc08155d8",
+      "post": {
+        "id": "2122754551187132438",
+        "text": "These models are extremely efficient, which you feel in speed to complete tasks, cost and how much further your usage goes https://t.co/HIFob2j9Ag",
+        "at": "2026-11-17T18:11:38Z",
+        "url": "https://x.com/thsottiaux/status/2122754551187132438",
+        "parents": [
+          "2122753991000133943"
+        ]
+      }
     }
   },
   "accepted": {
