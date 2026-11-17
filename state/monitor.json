@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2111918635849801739": {
-      "fingerprint": "dde50da71db310d8485ee8eb",
-      "post": {
-        "id": "2111918635849801739",
-        "text": "We’ll see",
-        "at": "2026-10-18T20:33:34Z",
-        "url": "https://x.com/thsottiaux/status/2111918635849801739",
-        "parents": [
-          "2111918435877720405"
-        ]
-      }
-    },
-    "2111918768733753664": {
-      "fingerprint": "42bde3f0b8a9f9885677aa1e",
-      "post": {
-        "id": "2111918768733753664",
-        "text": "People have escaped the TL and are asking me for resets on the street now. I’ll make little cards to hand out",
-        "at": "2026-10-18T20:34:06Z",
-        "url": "https://x.com/thsottiaux/status/2111918768733753664",
-        "parents": []
-      }
-    },
     "2111941223187710114": {
       "fingerprint": "04316e393331734cdf0acc61",
       "post": {
