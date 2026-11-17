@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2111945355596353823": {
-      "fingerprint": "e7f454e08e41625107999744",
-      "post": {
-        "id": "2111945355596353823",
-        "text": "@theo Journalism with additional Theo steps",
-        "at": "2026-10-18T22:19:45Z",
-        "url": "https://x.com/thsottiaux/status/2111945355596353823",
-        "parents": []
-      }
-    },
     "2111990254408434095": {
       "fingerprint": "70206f3a8f1046794195f24e",
       "post": {
@@ -2163,6 +2153,36 @@
         "parents": [
           "2122753991000133943"
         ]
+      }
+    },
+    "2122815564821434613": {
+      "fingerprint": "85e3c316d0479b719728e913",
+      "post": {
+        "id": "2122815564821434613",
+        "text": "@AdamHoltererer What is ClutterBench",
+        "at": "2026-11-17T22:14:05Z",
+        "url": "https://x.com/thsottiaux/status/2122815564821434613",
+        "parents": []
+      }
+    },
+    "2122816053348847795": {
+      "fingerprint": "9763e3c8a16bcd51ece16db8",
+      "post": {
+        "id": "2122816053348847795",
+        "text": "@Conor_D_Dart Much faster too",
+        "at": "2026-11-17T22:16:01Z",
+        "url": "https://x.com/thsottiaux/status/2122816053348847795",
+        "parents": []
+      }
+    },
+    "2122816458711548126": {
+      "fingerprint": "a217eb33993919bc4194791b",
+      "post": {
+        "id": "2122816458711548126",
+        "text": "@notjazii Team never stops. We'll get it right on all levels one day, in the meantime it's a pretty good jump on all fronts and cheaper/faster.",
+        "at": "2026-11-17T22:17:38Z",
+        "url": "https://x.com/thsottiaux/status/2122816458711548126",
+        "parents": []
       }
     }
   },
