@@ -2314,6 +2314,16 @@
         "url": "https://x.com/thsottiaux/status/2123151267002503570",
         "parents": []
       }
+    },
+    "2123175166519992652": {
+      "fingerprint": "010227676a47cd10fe160641",
+      "post": {
+        "id": "2123175166519992652",
+        "text": "GPT-6.2 Astra is pretty good at hard things. Here the team shared some results on AMD and Jalapeño chip optimizations.\n\nI do get the feedback on its communication style and we're working on that, but for really the hardest tasks in the world it does seem to be in a league of its own at the moment.",
+        "at": "2026-11-18T22:03:01Z",
+        "url": "https://x.com/thsottiaux/status/2123175166519992652",
+        "parents": []
+      }
     }
   },
   "accepted": {
