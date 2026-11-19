@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2112592264686149749": {
-      "fingerprint": "141aba0f2b739da0729e4278",
-      "post": {
-        "id": "2112592264686149749",
-        "text": "There were reports of usage draining faster than anticipated for some users over the weekend. We've identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan. We are reaching out individually to all these users and have corrected the issue. If this affected you, we'll add credits to your account. Sorry we got this wrong.",
-        "at": "2026-10-20T17:10:20Z",
-        "url": "https://x.com/thsottiaux/status/2112592264686149749",
-        "parents": []
-      }
-    },
     "2112712984644784534": {
       "fingerprint": "58e2e54d64c61bc58f29c7f3",
       "post": {
