@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2112432076767289678": {
-      "fingerprint": "650f635911e8f80fc30e277a",
-      "post": {
-        "id": "2112432076767289678",
-        "text": "Day 15/ Nevermind, we're still cooking... and reset. Enjoy. https://t.co/RZ9WhtI802",
-        "at": "2026-10-20T06:33:48Z",
-        "url": "https://x.com/thsottiaux/status/2112432076767289678",
-        "parents": []
-      }
-    },
     "2112592264686149749": {
       "fingerprint": "141aba0f2b739da0729e4278",
       "post": {
@@ -2327,11 +2317,6 @@
     }
   },
   "accepted": {
-    "2112432076767289678:b57576cf21dbc37536f73d63": {
-      "at": "2026-10-20T06:45:21Z",
-      "receipt": "cf84d7c018c74617b8e7c3ce9e26411d",
-      "status": "accepted_not_delivery_verified"
-    },
     "2112798407928713717:b2b478f72d6cc70a8bcc0fc0": {
       "at": "2026-10-21T07:00:38Z",
       "receipt": "556b9fc79d3b407ba3d71e9e4010db81",
