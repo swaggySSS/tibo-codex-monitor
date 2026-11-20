@@ -3,18 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2112906496736641416": {
-      "fingerprint": "dd8b274bcdb9c5c4199fde5e",
-      "post": {
-        "id": "2112906496736641416",
-        "text": "is this true",
-        "at": "2026-10-21T13:58:59Z",
-        "url": "https://x.com/thsottiaux/status/2112906496736641416",
-        "parents": [
-          "2112624715940663449"
-        ]
-      }
-    },
     "2112992042465009736": {
       "fingerprint": "c1c3726c96f5d97fc0b7011b",
       "post": {
