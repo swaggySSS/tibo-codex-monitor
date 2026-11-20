@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2113029655095836957": {
-      "fingerprint": "545a69920ac2862db733170b",
-      "post": {
-        "id": "2113029655095836957",
-        "text": "Dot, Dotter, Dottest",
-        "at": "2026-10-21T22:08:22Z",
-        "url": "https://x.com/thsottiaux/status/2113029655095836957",
-        "parents": []
-      }
-    },
-    "2113029854417600834": {
-      "fingerprint": "9a1354d24488f4fac68bf430",
-      "post": {
-        "id": "2113029854417600834",
-        "text": "Fully included in the Pro plan, doesn't draw on your weekly usage.",
-        "at": "2026-10-21T22:09:10Z",
-        "url": "https://x.com/thsottiaux/status/2113029854417600834",
-        "parents": [
-          "2113029655095836957"
-        ]
-      }
-    },
     "2113162277688070445": {
       "fingerprint": "419f97fc6643619afa1bec08",
       "post": {
@@ -2418,6 +2396,16 @@
         "text": "@DallenFrutchey IS THIS HOW WE COMMUNICATE NOW?",
         "at": "2026-11-20T19:52:45Z",
         "url": "https://x.com/thsottiaux/status/2123867163345961285",
+        "parents": []
+      }
+    },
+    "2123901067272618336": {
+      "fingerprint": "d8b1371d25ba60edecad1547",
+      "post": {
+        "id": "2123901067272618336",
+        "text": "@theo @maria_rcks But is it true",
+        "at": "2026-11-20T22:07:29Z",
+        "url": "https://x.com/thsottiaux/status/2123901067272618336",
         "parents": []
       }
     }
