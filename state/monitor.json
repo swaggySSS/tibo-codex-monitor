@@ -3,16 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2112992042465009736": {
-      "fingerprint": "c1c3726c96f5d97fc0b7011b",
-      "post": {
-        "id": "2112992042465009736",
-        "text": "@claudeai Dot, meet Duet. Duet, meet Dot. Be nice to each other.",
-        "at": "2026-10-21T19:38:55Z",
-        "url": "https://x.com/thsottiaux/status/2112992042465009736",
-        "parents": []
-      }
-    },
     "2113009945134379213": {
       "fingerprint": "017604aebb5e48a06cbdc322",
       "post": {
@@ -2408,6 +2398,26 @@
         "text": "@charliermarsh Actual engineering going on here.",
         "at": "2026-11-20T19:23:27Z",
         "url": "https://x.com/thsottiaux/status/2123859787079426435",
+        "parents": []
+      }
+    },
+    "2123861214644347122": {
+      "fingerprint": "af8862185b938542ad2d4a0c",
+      "post": {
+        "id": "2123861214644347122",
+        "text": "Team is locked in, upgrade your desktop app. Faster, simpler and a lot more pleasant to use. https://t.co/1X8M5JwL77",
+        "at": "2026-11-20T19:29:07Z",
+        "url": "https://x.com/thsottiaux/status/2123861214644347122",
+        "parents": []
+      }
+    },
+    "2123864112694509995": {
+      "fingerprint": "0e7bd6d4702ab0767d503ea1",
+      "post": {
+        "id": "2123864112694509995",
+        "text": "First tweet from Akshay. Be nice to this one, he’s special. https://t.co/GNLkstqT9K",
+        "at": "2026-11-20T19:40:38Z",
+        "url": "https://x.com/thsottiaux/status/2123864112694509995",
         "parents": []
       }
     }
