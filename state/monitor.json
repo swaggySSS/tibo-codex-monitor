@@ -3,38 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2113162277688070445": {
-      "fingerprint": "419f97fc6643619afa1bec08",
-      "post": {
-        "id": "2113162277688070445",
-        "text": "Day 17/ Bet you thought we forgot, but no, it’s reset day today.\n\nAlso good time to remind you to get Daybreak Blue access, it only takes 15 mins and you don’t want to have to do it in the middle of an incident.",
-        "at": "2026-10-22T06:55:22Z",
-        "url": "https://x.com/thsottiaux/status/2113162277688070445",
-        "parents": []
-      }
-    },
-    "2113162413008884099": {
-      "fingerprint": "fd7078b44356c49f80999346",
-      "post": {
-        "id": "2113162413008884099",
-        "text": "Lands tomorrow before 10am PST.",
-        "at": "2026-10-22T06:55:54Z",
-        "url": "https://x.com/thsottiaux/status/2113162413008884099",
-        "parents": [
-          "2113162277688070445"
-        ]
-      }
-    },
-    "2113163458867032238": {
-      "fingerprint": "b1e289fba74a933019084fc2",
-      "post": {
-        "id": "2113163458867032238",
-        "text": "@ebloch Hefty",
-        "at": "2026-10-22T07:00:03Z",
-        "url": "https://x.com/thsottiaux/status/2113163458867032238",
-        "parents": []
-      }
-    },
     "2113404560853397516": {
       "fingerprint": "cd946b5adbb93131bafc64dc",
       "post": {
@@ -2431,16 +2399,6 @@
     }
   },
   "accepted": {
-    "2113162277688070445:a9b67068846f51462a92eb14": {
-      "at": "2026-10-22T07:00:37Z",
-      "receipt": "6df317cf6ecf444993b34fa39adcac52",
-      "status": "accepted_not_delivery_verified"
-    },
-    "2113162413008884099:4c158606d40909b3bccf9b9e": {
-      "at": "2026-10-22T07:00:37Z",
-      "receipt": "6df317cf6ecf444993b34fa39adcac52",
-      "status": "accepted_not_delivery_verified"
-    },
     "2113492187770175603:d72a8aa3b682e53e90d1bc0a": {
       "at": "2026-10-23T05:00:37Z",
       "receipt": "1ddc606b420a430882cfba537065d0d5",
