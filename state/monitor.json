@@ -3,38 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2113770573994299544": {
-      "fingerprint": "bbe0f3ef1ead7b54a87fb2f6",
-      "post": {
-        "id": "2113770573994299544",
-        "text": "Day 19/ Small updates. Calls connect much faster for dots, changing reasoning in codex & work mid conversation does not invalidate cache anymore and a we've also updated the codex cli.",
-        "at": "2026-10-23T23:12:31Z",
-        "url": "https://x.com/thsottiaux/status/2113770573994299544",
-        "parents": []
-      }
-    },
-    "2113770862860222611": {
-      "fingerprint": "2108a177fd09a987de921e15",
-      "post": {
-        "id": "2113770862860222611",
-        "text": "On codex cli updates. We've added reusable prompt presets, inline model and permission settings, and enterprise MCP sign-in. We've also fixed failures when resuming long sessions and added Windows corporate-proxy authentication.\n\nSurprisingly the CLI has grown 2X in usage since devday.",
-        "at": "2026-10-23T23:13:40Z",
-        "url": "https://x.com/thsottiaux/status/2113770862860222611",
-        "parents": [
-          "2113770573994299544"
-        ]
-      }
-    },
-    "2113771215433392478": {
-      "fingerprint": "8bbfc6e9c34ceb0f8886805e",
-      "post": {
-        "id": "2113771215433392478",
-        "text": "@playdropai @bcherny @alexandr_wang @poteto Fun game",
-        "at": "2026-10-23T23:15:04Z",
-        "url": "https://x.com/thsottiaux/status/2113771215433392478",
-        "parents": []
-      }
-    },
     "2113838156193894447": {
       "fingerprint": "d13f688bf8cd43f1230473c9",
       "post": {
