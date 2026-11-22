@@ -3,28 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2113492187770175603": {
-      "fingerprint": "709ddeb9a83289f874e60edc",
-      "post": {
-        "id": "2113492187770175603",
-        "text": "Day 18/ Decisions API is GA, OpenResponses joined the Linux Foundation, we shipped some performance improvements and Uber is going all-in on codex & work. But yes… that’s a reset!",
-        "at": "2026-10-23T04:46:19Z",
-        "url": "https://x.com/thsottiaux/status/2113492187770175603",
-        "parents": []
-      }
-    },
-    "2113492502355562875": {
-      "fingerprint": "e7d4bc5f56e2697e7190a809",
-      "post": {
-        "id": "2113492502355562875",
-        "text": "Landing tomorrow before 10am PST together with a small ship.",
-        "at": "2026-10-23T04:47:34Z",
-        "url": "https://x.com/thsottiaux/status/2113492502355562875",
-        "parents": [
-          "2113492187770175603"
-        ]
-      }
-    },
     "2113770573994299544": {
       "fingerprint": "bbe0f3ef1ead7b54a87fb2f6",
       "post": {
@@ -2409,16 +2387,6 @@
     }
   },
   "accepted": {
-    "2113492187770175603:d72a8aa3b682e53e90d1bc0a": {
-      "at": "2026-10-23T05:00:37Z",
-      "receipt": "1ddc606b420a430882cfba537065d0d5",
-      "status": "accepted_not_delivery_verified"
-    },
-    "2113492502355562875:03a304d2477fcce0430aaf14": {
-      "at": "2026-10-23T05:00:37Z",
-      "receipt": "1ddc606b420a430882cfba537065d0d5",
-      "status": "accepted_not_delivery_verified"
-    },
     "health:failure:2026-10-23T13:00:43Z": {
       "at": "2026-10-23T13:30:34Z",
       "receipt": "800feba3ff0741938f3c1b69211098ca",
