@@ -2345,28 +2345,14 @@
       "at": "2026-11-12T22:15:26Z",
       "receipt": "48db4d536d1e419984715de68453a316",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2125299248782778588:f4888d64c0d9af6e5153f9c2": {
-      "type": "post",
-      "at": "2026-11-24T18:43:21Z",
-      "post": {
-        "id": "2125299248782778588",
-        "text": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
-        "at": "2026-11-24T18:43:21Z",
-        "url": "https://x.com/thsottiaux/status/2125299248782778588",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-24T19:00:40Z",
+      "receipt": "ff7f3c77b62a4b9fb96787025fdad7d7",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
