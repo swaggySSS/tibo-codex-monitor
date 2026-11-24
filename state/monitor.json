@@ -3,18 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2114228445043691592": {
-      "fingerprint": "e3b0c44298fc1c149afbf4c8",
-      "post": {
-        "id": "2114228445043691592",
-        "text": "https://t.co/cjuGQnsUgA",
-        "at": "2026-10-25T05:31:56Z",
-        "url": "https://x.com/thsottiaux/status/2114228445043691592",
-        "parents": [
-          "2114204359919820920"
-        ]
-      }
-    },
     "2114237083652882932": {
       "fingerprint": "0cbcc84fe933a183f4c4b41d",
       "post": {
@@ -2279,11 +2267,6 @@
     }
   },
   "accepted": {
-    "2114228044072403055:339f6d8028dc2738b4c72a8a": {
-      "at": "2026-10-25T05:45:21Z",
-      "receipt": "07420f6fb9ce48688950dacf8c800a53",
-      "status": "accepted_not_delivery_verified"
-    },
     "2114588174249071102:1913070231f6c918b37e1369": {
       "at": "2026-10-26T05:30:30Z",
       "receipt": "3982fb43c7b24662accfe5eaac6502cd",
