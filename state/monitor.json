@@ -2254,6 +2254,40 @@
         "url": "https://x.com/thsottiaux/status/2125284868414394550",
         "parents": []
       }
+    },
+    "2125299248782778588": {
+      "fingerprint": "f00ea483fe905097a36b9b3a",
+      "post": {
+        "id": "2125299248782778588",
+        "text": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+        "at": "2026-11-24T18:43:21Z",
+        "url": "https://x.com/thsottiaux/status/2125299248782778588",
+        "parents": []
+      }
+    },
+    "2125299436964479474": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8",
+      "post": {
+        "id": "2125299436964479474",
+        "text": "https://t.co/SY2X7f40c5",
+        "at": "2026-11-24T18:44:06Z",
+        "url": "https://x.com/thsottiaux/status/2125299436964479474",
+        "parents": [
+          "2125299248782778588"
+        ]
+      }
+    },
+    "2125299467691987445": {
+      "fingerprint": "1bb8db5160e158eb9d6cd285",
+      "post": {
+        "id": "2125299467691987445",
+        "text": "Sign up for ChatGPT Business: https://t.co/2WH7P7Yx7L",
+        "at": "2026-11-24T18:44:13Z",
+        "url": "https://x.com/thsottiaux/status/2125299467691987445",
+        "parents": [
+          "2125299248782778588"
+        ]
+      }
     }
   },
   "accepted": {
@@ -2313,7 +2347,26 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2125299248782778588:f4888d64c0d9af6e5153f9c2": {
+      "type": "post",
+      "at": "2026-11-24T18:43:21Z",
+      "post": {
+        "id": "2125299248782778588",
+        "text": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+        "at": "2026-11-24T18:43:21Z",
+        "url": "https://x.com/thsottiaux/status/2125299248782778588",
+        "parents": []
+      },
+      "signal": {
+        "stages": [
+          "banked"
+        ],
+        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
