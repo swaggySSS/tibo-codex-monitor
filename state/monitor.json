@@ -3,18 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2114228044072403055": {
-      "fingerprint": "bb72fe8749a4177b2a188fa9",
-      "post": {
-        "id": "2114228044072403055",
-        "text": "Not a real improvement, put the reset in the bag",
-        "at": "2026-10-25T05:30:20Z",
-        "url": "https://x.com/thsottiaux/status/2114228044072403055",
-        "parents": [
-          "2114219096128750008"
-        ]
-      }
-    },
     "2114228445043691592": {
       "fingerprint": "e3b0c44298fc1c149afbf4c8",
       "post": {
