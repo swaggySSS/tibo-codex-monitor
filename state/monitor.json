@@ -3,26 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2114588174249071102": {
-      "fingerprint": "c9f81a443b139cfafc45ab6f",
-      "post": {
-        "id": "2114588174249071102",
-        "text": "Day 21/ Wonder what happens the remaining seven days. But today is a reset.",
-        "at": "2026-10-26T05:21:22Z",
-        "url": "https://x.com/thsottiaux/status/2114588174249071102",
-        "parents": []
-      }
-    },
-    "2114588845874491691": {
-      "fingerprint": "b080f8e92d71307b9561795f",
-      "post": {
-        "id": "2114588845874491691",
-        "text": "@Aoakudotcom Me too, me too",
-        "at": "2026-10-26T05:24:02Z",
-        "url": "https://x.com/thsottiaux/status/2114588845874491691",
-        "parents": []
-      }
-    },
     "2114595002210783279": {
       "fingerprint": "8f230f542e69d3e33dd6834b",
       "post": {
@@ -2301,11 +2281,6 @@
     }
   },
   "accepted": {
-    "2114588174249071102:1913070231f6c918b37e1369": {
-      "at": "2026-10-26T05:30:30Z",
-      "receipt": "3982fb43c7b24662accfe5eaac6502cd",
-      "status": "accepted_not_delivery_verified"
-    },
     "2114599388454481930:9ec5236f4838709644b49788": {
       "at": "2026-10-26T06:15:23Z",
       "receipt": "9109aab6f18d400ba277f6f86a264893",
