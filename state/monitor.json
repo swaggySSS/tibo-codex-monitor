@@ -2313,28 +2313,14 @@
       "at": "2026-11-26T03:00:41Z",
       "receipt": "dc153841333a477bb796897a5659d318",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2125853628250599730:b85fb9ba42ebf87b46980e0f": {
-      "type": "post",
-      "at": "2026-11-26T07:26:16Z",
-      "post": {
-        "id": "2125853628250599730",
-        "text": "Banked reset is online",
-        "at": "2026-11-26T07:26:16Z",
-        "url": "https://x.com/thsottiaux/status/2125853628250599730",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-26T07:30:38Z",
+      "receipt": "0cdcaa649da443fdabaa557ed519a402",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
