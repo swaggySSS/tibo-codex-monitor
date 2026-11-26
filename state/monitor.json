@@ -2246,6 +2246,16 @@
         "url": "https://x.com/thsottiaux/status/2125784147889393806",
         "parents": []
       }
+    },
+    "2125853628250599730": {
+      "fingerprint": "bdc8bb3b935b582efb295a17",
+      "post": {
+        "id": "2125853628250599730",
+        "text": "Banked reset is online",
+        "at": "2026-11-26T07:26:16Z",
+        "url": "https://x.com/thsottiaux/status/2125853628250599730",
+        "parents": []
+      }
     }
   },
   "accepted": {
@@ -2305,7 +2315,26 @@
       "status": "accepted_not_delivery_verified"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "2125853628250599730:b85fb9ba42ebf87b46980e0f": {
+      "type": "post",
+      "at": "2026-11-26T07:26:16Z",
+      "post": {
+        "id": "2125853628250599730",
+        "text": "Banked reset is online",
+        "at": "2026-11-26T07:26:16Z",
+        "url": "https://x.com/thsottiaux/status/2125853628250599730",
+        "parents": []
+      },
+      "signal": {
+        "stages": [
+          "banked"
+        ],
+        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
+        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
+      }
+    }
+  },
   "health": {
     "failures": 0,
     "alerted": false,
