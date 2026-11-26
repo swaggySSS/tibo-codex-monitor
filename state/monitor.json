@@ -2308,28 +2308,14 @@
       "at": "2026-11-24T19:00:40Z",
       "receipt": "ff7f3c77b62a4b9fb96787025fdad7d7",
       "status": "accepted_not_delivery_verified"
-    }
-  },
-  "outbox": {
+    },
     "2125784147889393806:a9299f7bcd3f69c595a0f5aa": {
-      "type": "post",
-      "at": "2026-11-26T02:50:10Z",
-      "post": {
-        "id": "2125784147889393806",
-        "text": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
-        "at": "2026-11-26T02:50:10Z",
-        "url": "https://x.com/thsottiaux/status/2125784147889393806",
-        "parents": []
-      },
-      "signal": {
-        "stages": [
-          "banked"
-        ],
-        "summary": "原文涉及可储存的重置额度，领取或使用方式以原文为准。",
-        "timing": "北京时间（UTC+8）：原文未提供可确定的执行时间。"
-      }
+      "at": "2026-11-26T03:00:41Z",
+      "receipt": "dc153841333a477bb796897a5659d318",
+      "status": "accepted_not_delivery_verified"
     }
   },
+  "outbox": {},
   "health": {
     "failures": 0,
     "alerted": false,
