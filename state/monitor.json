@@ -3,40 +3,6 @@
   "started_at": "2026-10-19T03:40:37Z",
   "initialized": true,
   "posts": {
-    "2115272201922572627": {
-      "fingerprint": "bd6a1bb99268f6819dd1ce24",
-      "post": {
-        "id": "2115272201922572627",
-        "text": "What's going on",
-        "at": "2026-10-28T02:39:27Z",
-        "url": "https://x.com/thsottiaux/status/2115272201922572627",
-        "parents": [
-          "2115099787427242446"
-        ]
-      }
-    },
-    "2115273064481218829": {
-      "fingerprint": "8633a4f89020d6ccc1accdae",
-      "post": {
-        "id": "2115273064481218829",
-        "text": "Day 23/ Much requested iCloud Main & Calendar plugins. Just kidding, today is a reset. Still much requested though! https://t.co/tHe09XkVXH",
-        "at": "2026-10-28T02:42:53Z",
-        "url": "https://x.com/thsottiaux/status/2115273064481218829",
-        "parents": []
-      }
-    },
-    "2115273253711409208": {
-      "fingerprint": "45bf02ca3a9a68d1fbff2ebd",
-      "post": {
-        "id": "2115273253711409208",
-        "text": "Lands by midnight PST.",
-        "at": "2026-10-28T02:43:38Z",
-        "url": "https://x.com/thsottiaux/status/2115273253711409208",
-        "parents": [
-          "2115273064481218829"
-        ]
-      }
-    },
     "2115289940233961584": {
       "fingerprint": "939478201bc37365725dfd74",
       "post": {
