@@ -2215,11 +2215,6 @@
     }
   },
   "accepted": {
-    "2115273064481218829:0a1db7d90531761eb19ea97b": {
-      "at": "2026-10-28T03:00:41Z",
-      "receipt": "f01b87130a3b4e5b90a2b4acd41009b7",
-      "status": "accepted_not_delivery_verified"
-    },
     "2115851621137784832:b448c46c65ca84d49ac5afc6": {
       "at": "2026-10-29T17:15:25Z",
       "receipt": "090f9a52146046d89bfa6c18dc65cba1",
